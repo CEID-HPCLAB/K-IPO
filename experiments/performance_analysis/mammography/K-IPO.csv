@@ -1,0 +1,5 @@
+dataset_idx,requested_samples,iterations,generated_samples,dry_blocks,elapsed_time
+1,6345,14,12245,2,20.33
+2,6345,11,9722,2,15.373
+3,6345,13,9554,4,18.478
+4,6345,10,9750,1,14.15
