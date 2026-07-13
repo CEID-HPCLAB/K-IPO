@@ -1,0 +1,9 @@
+*.sh
+*.rs
+reqs*.txt
+hmean.py
+*venv*
+format_topk*.py
+*.zip
+merge.py
+depr/*
