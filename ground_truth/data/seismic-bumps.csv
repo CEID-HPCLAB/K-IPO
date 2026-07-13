@@ -1,0 +1,16 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+nbumps,nbumps,nbumps,gdpuls,nbumps,genergy,genergy
+nbumps2,nbumps3,nbumps3,shift,gpuls,gpuls,gpuls
+gpuls,energy,nbumps2,gdenergy,energy,gdenergy,gdpuls
+nbumps3,nbumps2,gpuls,gpuls,nbumps2,gdpuls,gdenergy
+genergy,genergy,shift,seismoacoustic,maxenergy,energy,maxenergy
+energy,gpuls,genergy,seismic,genergy,maxenergy,energy
+shift,maxenergy,seismic,nbumps,nbumps3,nbumps,nbumps
+maxenergy,shift,nbumps4,genergy,shift,nbumps2,nbumps2
+seismic,nbumps4,energy,nbumps3,seismic,nbumps3,nbumps3
+nbumps4,seismic,maxenergy,ghazard,nbumps4,seismic,seismoacoustic
+gdpuls,gdenergy,gdpuls,nbumps2,gdpuls,seismoacoustic,seismic
+gdenergy,ghazard,ghazard,nbumps4,gdenergy,shift,shift
+ghazard,seismoacoustic,seismoacoustic,energy,ghazard,nbumps4,nbumps4
+seismoacoustic,gdpuls,nbumps5,maxenergy,seismoacoustic,ghazard,ghazard
+nbumps5,nbumps5,gdenergy,nbumps5,nbumps5,nbumps5,nbumps5

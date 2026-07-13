@@ -1,0 +1,9 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+Shell weight,Shell weight,Shell weight,Shell weight,Shell weight,Whole weight,Whole weight
+Diameter,Diameter,Whole weight,Whole weight,Height,Shucked weight,Shucked weight
+Height,Length,Diameter,Viscera weight,Whole weight,Viscera weight,Viscera weight
+Length,Viscera weight,Viscera weight,Shucked weight,Diameter,Shell weight,Length
+Whole weight,Whole weight,Length,Diameter,Viscera weight,Length,Shell weight
+Viscera weight,Height,Height,Length,Length,Diameter,Diameter
+Shucked weight,Shucked weight,Shucked weight,Height,Shucked weight,Height,Height
+Sex,Sex,Sex,Sex,Sex,Sex,Sex

@@ -1,0 +1,6 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+Mean_G,Mean_R,Mean_NIR,Mean_NIR,Mean_R,SD_Plan,SD_Plan
+Mean_NIR,Mean_G,Mean_G,SD_Plan,Mean_G,GLCM_Pan,GLCM_Pan
+Mean_R,Mean_NIR,SD_Plan,GLCM_Pan,Mean_NIR,Mean_R,Mean_G
+SD_Plan,SD_Plan,GLCM_Pan,Mean_R,SD_Plan,Mean_NIR,Mean_R
+GLCM_Pan,GLCM_Pan,Mean_R,Mean_G,GLCM_Pan,Mean_G,Mean_NIR

@@ -1,0 +1,15 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+coefficient6,coefficient6,coefficient6,coefficient6,coefficient6,coefficient6,coefficient6
+coefficient7,coefficient7,utterance,coefficient1,utterance,frame,frame
+utterance,utterance,coefficient1,coefficient7,coefficient7,coefficient3,coefficient11
+coefficient1,coefficient1,coefficient7,coefficient9,coefficient1,coefficient2,utterance
+coefficient2,coefficient2,coefficient2,coefficient3,coefficient2,coefficient5,coefficient10
+coefficient3,coefficient3,coefficient3,utterance,coefficient3,coefficient7,coefficient12
+coefficient10,coefficient9,coefficient10,coefficient2,coefficient9,coefficient1,coefficient7
+coefficient9,coefficient10,coefficient9,coefficient8,coefficient10,coefficient4,coefficient8
+coefficient5,coefficient5,coefficient5,coefficient5,coefficient11,coefficient9,coefficient9
+coefficient11,coefficient11,coefficient11,coefficient10,coefficient5,coefficient12,coefficient5
+coefficient4,coefficient8,coefficient4,coefficient4,coefficient4,coefficient10,coefficient4
+frame,coefficient4,frame,coefficient11,frame,coefficient11,coefficient2
+coefficient12,frame,coefficient12,coefficient12,coefficient8,coefficient8,coefficient3
+coefficient8,coefficient12,coefficient8,frame,coefficient12,utterance,coefficient1

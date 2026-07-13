@@ -1,0 +1,7 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+Torque [Nm],Torque [Nm],Torque [Nm],Torque [Nm],Torque [Nm],Torque [Nm],Torque [Nm]
+Rotational speed [rpm],Rotational speed [rpm],Tool wear [min],Rotational speed [rpm],Rotational speed [rpm],Tool wear [min],Tool wear [min]
+Tool wear [min],Tool wear [min],Air temperature [K],Tool wear [min],Tool wear [min],Rotational speed [rpm],Air temperature [K]
+Air temperature [K],Air temperature [K],Rotational speed [rpm],Air temperature [K],Air temperature [K],Air temperature [K],Rotational speed [rpm]
+Process temperature [K],Process temperature [K],Type,Process temperature [K],Process temperature [K],Process temperature [K],Process temperature [K]
+Type,Type,Process temperature [K],Type,Type,Type,Type

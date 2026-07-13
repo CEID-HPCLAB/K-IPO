@@ -1,0 +1,17 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+duration,duration,duration,duration,duration,balance,balance
+previous,poutcome,contact,day,pdays,duration,duration
+contact,pdays,previous,job,poutcome,age,age
+pdays,previous,housing,month,previous,day,day
+poutcome,balance,pdays,age,month,month,month
+housing,day,poutcome,contact,age,pdays,job
+month,education,loan,education,contact,job,pdays
+loan,job,campaign,loan,housing,previous,campaign
+balance,age,age,marital,balance,poutcome,previous
+campaign,month,education,balance,loan,campaign,poutcome
+age,marital,month,poutcome,day,education,education
+education,housing,job,housing,campaign,contact,marital
+marital,contact,balance,pdays,job,marital,contact
+job,campaign,marital,previous,education,housing,housing
+day,loan,day,default,marital,loan,loan
+default,default,default,campaign,default,default,default

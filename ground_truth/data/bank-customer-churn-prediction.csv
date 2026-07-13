@@ -1,0 +1,11 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+age,products_number,age,tenure,products_number,estimated_salary,estimated_salary
+products_number,age,active_member,estimated_salary,age,balance,balance
+active_member,active_member,balance,balance,active_member,credit_score,credit_score
+balance,country,gender,age,credit_score,age,age
+gender,balance,products_number,credit_score,balance,tenure,tenure
+country,credit_score,country,products_number,country,products_number,products_number
+credit_score,estimated_salary,credit_score,country,gender,country,country
+tenure,gender,credit_card,active_member,tenure,active_member,active_member
+estimated_salary,tenure,tenure,gender,estimated_salary,gender,gender
+credit_card,credit_card,estimated_salary,credit_card,credit_card,credit_card,credit_card

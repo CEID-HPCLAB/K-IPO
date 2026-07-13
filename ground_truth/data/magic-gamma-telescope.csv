@@ -1,0 +1,11 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+fAlpha,fAlpha,fAlpha,fAlpha,fLength,fM3Long,fM3Long
+fWidth,fWidth,fLength,fDist,fWidth,fLength,fLength
+fLength,fLength,fWidth,fSize,fM3Long,fAlpha,fConc1
+fM3Long,fM3Long,fM3Long,fConc,fAlpha,fAsym,fConc
+fAsym,fM3Trans,fAsym,fM3Long,fM3Trans,fM3Trans,fSize
+fM3Trans,fSize,fSize,fLength,fAsym,fDist,fWidth
+fSize,fAsym,fDist,fConc1,fConc,fSize,fAlpha
+fDist,fConc,fConc,fAsym,fSize,fWidth,fDist
+fConc,fDist,fConc1,fM3Trans,fConc1,fConc1,fM3Trans
+fConc1,fConc1,fM3Trans,fWidth,fDist,fConc,fAsym

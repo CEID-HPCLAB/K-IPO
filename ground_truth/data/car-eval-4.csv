@@ -1,0 +1,7 @@
+Distance Correlation,MI,Laplacian Score,ReliefF,Gini Index,JMI,MRI
+safety,safety,safety,safety,safety,safety,safety
+buying,buying,buying,buying,buying,buying,buying
+lug_boot,maint,lug_boot,lug_boot,persons,lug_boot,lug_boot
+persons,persons,persons,persons,lug_boot,persons,persons
+maint,lug_boot,maint,maint,maint,maint,maint
+doors,doors,doors,doors,doors,doors,doors
