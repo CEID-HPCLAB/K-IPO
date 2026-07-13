@@ -1,0 +1,46 @@
+dataset: ai4i2020
+
+generator: SMOTENC # SMOTENC | SMOTEWB | CTGAN | TVAE | SMOTENN | SMOTEN | ROS | GaussianCopula
+
+tau_threshold: 0.9
+
+topk_overlap: 5 # integer: absolute top-k, float: percentage of total features
+
+topk_ordering: 3 # integer: absolute top-k, float: percentage of total features
+
+balance_ratio: 0.75
+
+train_test_ratio: 0.8
+
+seed: 256 
+
+models:
+  - RandomForest  
+  - MLP
+  - GAMINet
+
+XAI_methods:
+  - shap
+  - sofi
+  - estimator_feature_importance
+
+gen_params:
+  SMOTENC: {}
+  SMOTEENN: {}
+  SMOTEN: {}
+  ROS: {}
+  GaussianCopula: {}
+  SMOTEWB:
+    n_iters: 50
+    max_depth: 30
+    nn_params:
+      metric: "minkowski"
+    n_jobs: 8
+  CTGAN:
+    epochs: 200
+  TVAE:
+    epochs: 300
+
+eval_dataset: "./evaluation/ai4i2020/datasets/K-IPO/1.csv"
+
+imbalance_ratio: 0.1
