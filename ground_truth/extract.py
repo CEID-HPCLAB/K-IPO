@@ -27,7 +27,7 @@ def main():
 
     print(ground_truth)
 
-    os.makedirs("data", exist_ok = True); path = os.path.join("ground_truth", DATASET)
+    os.makedirs("data", exist_ok = True); path = os.path.join("data", DATASET)
 
     if not os.path.exists(path):
         ground_truth.to_csv(path, index = False)
