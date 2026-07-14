@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/japanese-vowels/datasets/TVAE/1.csv,0.8681,1,9961,11684,0.9909,0.9897,0.9866,0.988,0.9895,0.9992,0.999,0.9791,0.9897,0.6111
+./evaluation/japanese-vowels/datasets/TVAE/2.csv,0.8462,1,9961,11684,0.9907,0.9899,0.988,0.9883,0.9885,0.9992,0.999,0.9795,0.9898,0.5635
+./evaluation/japanese-vowels/datasets/TVAE/3.csv,0.7802,1,9961,11684,0.9896,0.9867,0.9821,0.9846,0.987,0.999,0.9987,0.9729,0.9868,0.5873
+./evaluation/japanese-vowels/datasets/TVAE/4.csv,0.8462,1,9961,11684,0.989,0.9893,0.9846,0.9876,0.9905,0.9994,0.9992,0.9782,0.9895,0.6111
+./evaluation/japanese-vowels/datasets/TVAE/5.csv,0.8681,1,9961,11684,0.9891,0.9887,0.9856,0.9868,0.988,0.9993,0.999,0.9769,0.9886,0.5556
+./evaluation/japanese-vowels/datasets/TVAE/6.csv,0.8901,1,9961,11684,0.9897,0.9887,0.9827,0.9868,0.991,0.9993,0.9991,0.9769,0.989,0.6032
+./evaluation/japanese-vowels/datasets/TVAE/7.csv,0.8681,1,9961,11684,0.9898,0.9893,0.9866,0.9875,0.9885,0.9993,0.9991,0.9782,0.9892,0.5794
+./evaluation/japanese-vowels/datasets/TVAE/8.csv,0.9121,1,9961,11684,0.9889,0.9861,0.9784,0.9839,0.9895,0.9989,0.9985,0.9717,0.9865,0.6111
+./evaluation/japanese-vowels/datasets/TVAE/9.csv,0.8242,1,9961,11684,0.9902,0.9859,0.9773,0.9836,0.99,0.9991,0.9988,0.9713,0.9864,0.5556
+./evaluation/japanese-vowels/datasets/TVAE/10.csv,0.8462,1,9961,11684,0.9897,0.9895,0.9833,0.9878,0.9925,0.9996,0.9995,0.9787,0.9899,0.6349

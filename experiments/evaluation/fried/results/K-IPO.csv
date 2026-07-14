@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/fried/datasets/K-IPO/1.csv,0.8667,5,22469,28596,0.9574,0.9682,0.9584,0.9631,0.9678,0.995,0.994,0.9351,0.9681,0.6667
+./evaluation/fried/datasets/K-IPO/2.csv,1.0,10,22469,28596,0.9597,0.9733,0.9675,0.9689,0.9704,0.9964,0.9955,0.9456,0.973,0.6667
+./evaluation/fried/datasets/K-IPO/3.csv,0.9556,8,22469,28596,0.9586,0.9727,0.9688,0.9682,0.9676,0.9963,0.9953,0.9443,0.9721,0.6667
+./evaluation/fried/datasets/K-IPO/4.csv,0.9556,6,22469,28596,0.9619,0.9803,0.9796,0.977,0.9745,0.9972,0.9968,0.9599,0.9796,0.6667
+./evaluation/fried/datasets/K-IPO/5.csv,0.9556,6,22469,28596,0.9607,0.979,0.982,0.9754,0.9688,0.9963,0.9959,0.9572,0.9777,0.6825
+./evaluation/fried/datasets/K-IPO/6.csv,0.9556,7,22469,28596,0.96,0.9792,0.9836,0.9755,0.9678,0.9969,0.9964,0.9577,0.9778,0.6825
+./evaluation/fried/datasets/K-IPO/7.csv,0.9556,8,22469,28596,0.9612,0.9778,0.98,0.9739,0.968,0.9959,0.9955,0.9547,0.9766,0.6825
+./evaluation/fried/datasets/K-IPO/8.csv,0.9556,5,22469,28596,0.9593,0.9788,0.979,0.9751,0.9712,0.9964,0.996,0.9566,0.9778,0.6825
+./evaluation/fried/datasets/K-IPO/9.csv,0.9556,7,22469,28596,0.9606,0.9782,0.9785,0.9745,0.9706,0.9965,0.9961,0.9556,0.9773,0.6984
+./evaluation/fried/datasets/K-IPO/10.csv,1.0,10,22469,28596,0.9594,0.9718,0.9676,0.967,0.9665,0.9963,0.9953,0.9424,0.9711,0.6508

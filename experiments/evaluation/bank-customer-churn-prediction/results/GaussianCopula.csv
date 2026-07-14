@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/1.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/2.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/3.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/4.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/5.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/6.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/7.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/8.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/9.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476
+./evaluation/bank-customer-churn-prediction/datasets/GaussianCopula/10.csv,0.4667,2,8759,11147,0.7904,0.9334,0.9473,0.9203,0.8949,0.9718,0.9715,0.8643,0.9286,0.5476

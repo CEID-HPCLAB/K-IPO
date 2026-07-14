@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/1.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/2.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/3.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/4.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/5.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/6.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/7.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/8.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/9.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683
+./evaluation/online-shoppers-purchasing-intention/datasets/GaussianCopula/10.csv,0.4853,0,11464,14589,0.8151,0.9368,0.9423,0.925,0.9084,0.9787,0.9774,0.8709,0.9332,0.4683

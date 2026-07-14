@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/airlines/datasets/GaussianCopula/1.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/2.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/3.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/4.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/5.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/6.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/7.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/8.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/9.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714
+./evaluation/airlines/datasets/GaussianCopula/10.csv,0.7143,3,16427,21026,0.6627,0.7694,0.7228,0.7427,0.7643,0.8372,0.8151,0.5352,0.7688,0.7714

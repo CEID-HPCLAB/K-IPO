@@ -1,0 +1,7 @@
+shap,sofi,GAMINet
+Torque [Nm],Process temperature [K],Torque [Nm]
+Air temperature [K],Torque [Nm],Air temperature [K]
+Process temperature [K],Rotational speed [rpm],Process temperature [K]
+Tool wear [min],Air temperature [K],Rotational speed [rpm]
+Rotational speed [rpm],Tool wear [min],Tool wear [min]
+Type,Type,Type

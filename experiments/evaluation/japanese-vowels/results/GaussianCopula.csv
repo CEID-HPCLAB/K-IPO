@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/japanese-vowels/datasets/GaussianCopula/1.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/2.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/3.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/4.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/5.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/6.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/7.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/8.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/9.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556
+./evaluation/japanese-vowels/datasets/GaussianCopula/10.csv,0.9121,1,9961,11684,0.991,0.9861,0.984,0.9838,0.9835,0.9988,0.9985,0.9716,0.9858,0.5556

@@ -1,0 +1,17 @@
+shap,sofi,GAMINet
+feature14,feature15,feature16
+feature16,feature5,feature13
+feature15,feature16,feature11
+feature11,feature7,feature6
+feature7,feature14,feature9
+feature9,feature4,feature14
+feature8,feature9,feature4
+feature4,feature11,feature2
+feature3,feature8,feature10
+feature6,feature12,feature15
+feature10,feature10,feature3
+feature13,feature6,feature8
+feature2,feature13,feature12
+feature12,feature1,feature5
+feature5,feature2,feature7
+feature1,feature3,feature1

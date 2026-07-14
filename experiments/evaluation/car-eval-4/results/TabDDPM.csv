@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/car-eval-4/datasets/TabDDPM/1.csv,0.7333,1,1728,2327,0.5895,0.47,0.392,0.4111,0.4325,0.4119,0.4221,-0.069,0.4653,0.5952
+./evaluation/car-eval-4/datasets/TabDDPM/2.csv,0.3333,1,1728,2327,0.5997,0.4442,0.3772,0.409,0.4475,0.3891,0.4164,-0.1099,0.4446,0.5952
+./evaluation/car-eval-4/datasets/TabDDPM/3.csv,0.3333,1,1728,2327,0.5895,0.4957,0.4211,0.4381,0.4575,0.4459,0.4608,-0.0178,0.491,0.5952
+./evaluation/car-eval-4/datasets/TabDDPM/4.csv,0.7333,2,1728,2327,0.5954,0.4742,0.4112,0.4602,0.5225,0.4428,0.4448,-0.0393,0.4802,0.6786
+./evaluation/car-eval-4/datasets/TabDDPM/5.csv,0.7333,2,1728,2327,0.5965,0.5032,0.4323,0.4369,0.45,0.4485,0.4564,-0.0057,0.4966,0.619
+./evaluation/car-eval-4/datasets/TabDDPM/6.csv,0.4667,0,1728,2327,0.5905,0.4592,0.3958,0.4388,0.4925,0.4163,0.431,-0.0728,0.4634,0.6071
+./evaluation/car-eval-4/datasets/TabDDPM/7.csv,0.4667,1,1728,2327,0.6147,0.471,0.405,0.44,0.4825,0.428,0.43,-0.0548,0.4725,0.5952
+./evaluation/car-eval-4/datasets/TabDDPM/8.csv,0.6,2,1728,2327,0.6249,0.4807,0.4084,0.4247,0.445,0.4174,0.4298,-0.0469,0.4763,0.5238
+./evaluation/car-eval-4/datasets/TabDDPM/9.csv,0.2,1,1728,2327,0.5873,0.4925,0.4166,0.4137,0.42,0.4214,0.4303,-0.0322,0.4835,0.5952
+./evaluation/car-eval-4/datasets/TabDDPM/10.csv,-0.0667,0,1728,2327,0.5954,0.4979,0.4264,0.4559,0.49,0.4625,0.4478,-0.0062,0.4969,0.5952

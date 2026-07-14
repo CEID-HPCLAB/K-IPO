@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/1.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/2.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/3.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/4.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/5.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/6.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/7.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/8.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/9.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714
+./evaluation/magic-gamma-telescope/datasets/GaussianCopula/10.csv,1.0,10,13565,17265,0.9159,0.9524,0.9495,0.9442,0.9392,0.986,0.985,0.9029,0.9507,0.5714

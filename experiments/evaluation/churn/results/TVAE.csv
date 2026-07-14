@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/churn/datasets/TVAE/1.csv,0.5053,0,4722,6009,0.9016,0.9663,0.9648,0.9604,0.9563,0.9844,0.9871,0.9313,0.9651,0.4082
+./evaluation/churn/datasets/TVAE/2.csv,0.4526,0,4722,6009,0.9039,0.9676,0.9713,0.9617,0.9524,0.9856,0.9879,0.9337,0.9657,0.4082
+./evaluation/churn/datasets/TVAE/3.csv,0.4526,0,4722,6009,0.9058,0.9659,0.9657,0.96,0.9544,0.986,0.9878,0.9303,0.9644,0.3741
+./evaluation/churn/datasets/TVAE/4.csv,0.4526,0,4722,6009,0.8962,0.9651,0.9777,0.9584,0.9398,0.9859,0.9875,0.9288,0.9619,0.3946
+./evaluation/churn/datasets/TVAE/5.csv,0.4632,0,4722,6009,0.9031,0.9634,0.9529,0.9574,0.9621,0.9861,0.988,0.9254,0.9632,0.4218
+./evaluation/churn/datasets/TVAE/6.csv,0.4632,0,4722,6009,0.8999,0.968,0.964,0.9625,0.9612,0.9861,0.9881,0.9347,0.9671,0.4014
+./evaluation/churn/datasets/TVAE/7.csv,0.4842,0,4722,6009,0.8918,0.9692,0.9868,0.9631,0.9408,0.9859,0.9879,0.9377,0.9657,0.4422
+./evaluation/churn/datasets/TVAE/8.csv,0.4842,0,4722,6009,0.9022,0.9655,0.9522,0.96,0.968,0.9868,0.9884,0.9297,0.9658,0.3946
+./evaluation/churn/datasets/TVAE/9.csv,0.4737,0,4722,6009,0.8983,0.9663,0.973,0.9601,0.9476,0.9869,0.9883,0.9312,0.964,0.415
+./evaluation/churn/datasets/TVAE/10.csv,0.4526,0,4722,6009,0.9047,0.963,0.9546,0.9569,0.9592,0.9853,0.9874,0.9245,0.9625,0.4218

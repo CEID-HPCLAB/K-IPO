@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/ur3-cobot-ops/datasets/TVAE/1.csv,0.4526,0,7355,9572,0.913,0.9491,0.9553,0.9397,0.9245,0.9852,0.9843,0.896,0.946,0.623
+./evaluation/ur3-cobot-ops/datasets/TVAE/2.csv,0.4316,1,7355,9572,0.9064,0.9462,0.9351,0.9374,0.9397,0.9848,0.9834,0.8903,0.9454,0.619
+./evaluation/ur3-cobot-ops/datasets/TVAE/3.csv,0.4,0,7355,9572,0.9145,0.9499,0.9559,0.9408,0.9263,0.9854,0.9841,0.8978,0.9469,0.6151
+./evaluation/ur3-cobot-ops/datasets/TVAE/4.csv,0.3789,0,7355,9572,0.9091,0.9452,0.9411,0.9359,0.9312,0.9846,0.9831,0.8883,0.9434,0.6349
+./evaluation/ur3-cobot-ops/datasets/TVAE/5.csv,0.4211,1,7355,9572,0.9074,0.9475,0.9432,0.9388,0.9348,0.9849,0.9834,0.8932,0.9459,0.6468
+./evaluation/ur3-cobot-ops/datasets/TVAE/6.csv,0.2316,0,7355,9572,0.9108,0.9486,0.9452,0.9396,0.9342,0.9854,0.9837,0.895,0.9468,0.631
+./evaluation/ur3-cobot-ops/datasets/TVAE/7.csv,0.4421,0,7355,9572,0.9129,0.9488,0.9551,0.9395,0.9245,0.9846,0.9833,0.8956,0.9458,0.6349
+./evaluation/ur3-cobot-ops/datasets/TVAE/8.csv,0.2842,0,7355,9572,0.9107,0.9449,0.9403,0.9354,0.9306,0.9844,0.9831,0.8874,0.9431,0.6468
+./evaluation/ur3-cobot-ops/datasets/TVAE/9.csv,0.5474,0,7355,9572,0.9122,0.9462,0.9395,0.9372,0.9348,0.9852,0.984,0.8902,0.9448,0.6429
+./evaluation/ur3-cobot-ops/datasets/TVAE/10.csv,0.3789,0,7355,9572,0.9094,0.9491,0.9472,0.9403,0.9336,0.9844,0.9832,0.8961,0.9472,0.6349

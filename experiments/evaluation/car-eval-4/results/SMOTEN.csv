@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/car-eval-4/datasets/SMOTEN/1.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/2.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/3.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/4.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/5.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/6.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/7.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/8.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/9.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214
+./evaluation/car-eval-4/datasets/SMOTEN/10.csv,0.7333,2,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8214

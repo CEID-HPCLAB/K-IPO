@@ -1,0 +1,9 @@
+shap,sofi,GAMINet
+Diameter,Shell weight,Diameter
+Viscera weight,Height,Whole weight
+Whole weight,Shucked weight,Viscera weight
+Shell weight,Viscera weight,Shucked weight
+Length,Length,Length
+Shucked weight,Sex,Height
+Height,Diameter,Shell weight
+Sex,Whole weight,Sex

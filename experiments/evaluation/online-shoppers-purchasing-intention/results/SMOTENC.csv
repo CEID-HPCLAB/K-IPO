@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/1.csv,0.6471,3,11464,14589,0.9235,0.9328,0.9053,0.9236,0.9432,0.9769,0.9654,0.8648,0.9341,0.5635
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/2.csv,0.6471,3,11464,14589,0.9237,0.9363,0.9161,0.9267,0.938,0.9803,0.9692,0.8708,0.9365,0.5079
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/3.csv,0.7333,3,11464,14589,0.9275,0.9292,0.8964,0.9196,0.944,0.979,0.9677,0.8574,0.9311,0.5159
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/4.csv,0.6324,3,11464,14589,0.9239,0.9339,0.9055,0.9244,0.944,0.9793,0.9684,0.8663,0.9351,0.5714
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/5.csv,0.6471,3,11464,14589,0.9238,0.9349,0.9112,0.9252,0.9396,0.9777,0.9659,0.8679,0.9355,0.4921
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/6.csv,0.6912,3,11464,14589,0.925,0.9315,0.9003,0.9223,0.946,0.9795,0.9692,0.8623,0.9333,0.619
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/7.csv,0.6765,3,11464,14589,0.9219,0.9375,0.9039,0.9291,0.956,0.9802,0.9699,0.8744,0.9398,0.5159
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/8.csv,0.75,3,11464,14589,0.9301,0.9347,0.8978,0.9263,0.9568,0.9811,0.9714,0.8693,0.9375,0.4762
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/9.csv,0.6765,3,11464,14589,0.9219,0.9375,0.9039,0.9291,0.956,0.9802,0.9699,0.8744,0.9398,0.5159
+./evaluation/online-shoppers-purchasing-intention/datasets/SMOTENC/10.csv,0.7206,3,11464,14589,0.9237,0.9378,0.9243,0.9277,0.9312,0.9805,0.9699,0.8732,0.937,0.5714

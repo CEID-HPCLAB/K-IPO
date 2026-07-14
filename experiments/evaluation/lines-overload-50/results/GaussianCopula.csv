@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/lines-overload-50/datasets/GaussianCopula/1.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/2.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/3.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/4.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/5.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/6.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/7.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/8.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/9.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355
+./evaluation/lines-overload-50/datasets/GaussianCopula/10.csv,0.7785,1,4368,5695,0.9756,0.9947,0.99,0.994,0.998,0.9997,0.9995,0.9893,0.9951,0.6355

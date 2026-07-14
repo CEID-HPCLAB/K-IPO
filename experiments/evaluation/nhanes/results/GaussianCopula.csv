@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/nhanes/datasets/GaussianCopula/1.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/2.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/3.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/4.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/5.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/6.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/7.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/8.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/9.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357
+./evaluation/nhanes/datasets/GaussianCopula/10.csv,0.9048,1,2105,2679,0.8647,0.9366,0.9644,0.9232,0.887,0.9605,0.9663,0.8726,0.9304,0.5357

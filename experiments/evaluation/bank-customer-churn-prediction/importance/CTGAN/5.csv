@@ -1,0 +1,11 @@
+shap,sofi,GAMINet
+credit_card,tenure,age
+products_number,age,products_number
+age,estimated_salary,active_member
+active_member,balance,credit_card
+credit_score,credit_score,balance
+balance,products_number,credit_score
+tenure,active_member,country
+country,credit_card,tenure
+estimated_salary,country,estimated_salary
+gender,gender,gender

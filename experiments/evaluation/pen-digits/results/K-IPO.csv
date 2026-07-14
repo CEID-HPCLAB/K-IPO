@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/pen-digits/datasets/K-IPO/1.csv,0.9333,8,10992,13910,0.9992,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6561
+./evaluation/pen-digits/datasets/K-IPO/2.csv,0.9333,8,10992,13910,0.9991,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6455
+./evaluation/pen-digits/datasets/K-IPO/3.csv,0.9167,8,10992,13910,0.9994,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6402
+./evaluation/pen-digits/datasets/K-IPO/4.csv,0.9333,11,10992,13910,0.9993,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6508
+./evaluation/pen-digits/datasets/K-IPO/5.csv,0.95,13,10992,13910,0.9993,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6455
+./evaluation/pen-digits/datasets/K-IPO/6.csv,0.9333,8,10992,13910,0.9992,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6455
+./evaluation/pen-digits/datasets/K-IPO/7.csv,0.9333,8,10992,13910,0.9991,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6455
+./evaluation/pen-digits/datasets/K-IPO/8.csv,0.95,8,10992,13910,0.9992,0.9996,1,0.9996,0.9992,1.0,1.0,0.9993,0.9996,0.6825
+./evaluation/pen-digits/datasets/K-IPO/9.csv,0.9333,11,10992,13910,0.9993,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6561
+./evaluation/pen-digits/datasets/K-IPO/10.csv,0.9333,8,10992,13910,0.9992,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,0.6667

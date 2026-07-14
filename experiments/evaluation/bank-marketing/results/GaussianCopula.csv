@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/bank-marketing/datasets/GaussianCopula/1.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/2.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/3.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/4.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/5.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/6.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/7.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/8.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/9.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667
+./evaluation/bank-marketing/datasets/GaussianCopula/10.csv,0.7667,1,4521,5598,0.7796,0.9121,0.9207,0.8957,0.874,0.9687,0.9643,0.8219,0.9073,0.4667

@@ -1,0 +1,11 @@
+shap,sofi,GAMINet
+fAlpha,fDist,fAlpha
+fAsym,fAsym,fAsym
+fWidth,fLength,fWidth
+fM3Long,fSize,fSize
+fLength,fM3Trans,fConc
+fSize,fConc,fDist
+fDist,fM3Long,fM3Long
+fConc,fAlpha,fLength
+fM3Trans,fWidth,fM3Trans
+fConc1,fConc1,fConc1

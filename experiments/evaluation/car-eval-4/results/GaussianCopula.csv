@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/car-eval-4/datasets/GaussianCopula/1.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/2.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/3.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/4.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/5.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/6.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/7.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/8.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/9.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/GaussianCopula/10.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9856,0.9657,0.985,0.8214

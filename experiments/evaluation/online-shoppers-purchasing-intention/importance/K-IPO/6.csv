@@ -1,0 +1,17 @@
+shap,sofi,GAMINet
+PageValues,ExitRates,PageValues
+Month,Weekend,Month
+ExitRates,Region,ExitRates
+Administrative,TrafficType,BounceRates
+Administrative_Duration,SpecialDay,Browser
+BounceRates,OperatingSystems,Administrative
+TrafficType,Month,Region
+ProductRelated_Duration,Administrative_Duration,OperatingSystems
+ProductRelated,Administrative,ProductRelated
+Region,ProductRelated_Duration,SpecialDay
+Informational,PageValues,Weekend
+OperatingSystems,Browser,ProductRelated_Duration
+Informational_Duration,ProductRelated,TrafficType
+Browser,BounceRates,Informational
+Weekend,Informational,Administrative_Duration
+SpecialDay,Informational_Duration,Informational_Duration

@@ -1,0 +1,16 @@
+shap,sofi,GAMINet
+maxenergy,genergy,nbumps
+nbumps,gpuls,nbumps3
+nbumps2,ghazard,nbumps2
+shift,shift,nbumps4
+gpuls,energy,energy
+energy,seismoacoustic,shift
+nbumps3,gdenergy,ghazard
+genergy,nbumps,gpuls
+gdpuls,seismic,genergy
+gdenergy,maxenergy,seismic
+seismic,gdpuls,seismoacoustic
+seismoacoustic,nbumps4,gdenergy
+ghazard,nbumps3,gdpuls
+nbumps4,nbumps5,nbumps5
+nbumps5,nbumps2,maxenergy

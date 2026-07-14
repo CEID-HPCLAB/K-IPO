@@ -1,0 +1,17 @@
+shap,sofi,GAMINet
+duration,duration,duration
+contact,campaign,contact
+housing,age,previous
+previous,pdays,poutcome
+campaign,default,education
+balance,poutcome,campaign
+pdays,loan,month
+month,housing,loan
+loan,previous,job
+age,education,balance
+poutcome,day,age
+day,month,housing
+job,job,pdays
+education,balance,marital
+marital,contact,default
+default,marital,day

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/seismic-bumps/datasets/GaussianCopula/1.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/2.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/3.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/4.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/5.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/6.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/7.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/8.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/9.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719
+./evaluation/seismic-bumps/datasets/GaussianCopula/10.csv,0.619,0,2584,3379,0.8405,0.9438,0.9664,0.932,0.9,0.9649,0.9698,0.8859,0.9383,0.719

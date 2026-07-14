@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/abalone/datasets/SMOTENC/1.csv,0.8571,2,4177,5299,0.9061,0.883,0.8196,0.875,0.9416,0.9429,0.8932,0.7752,0.8904,0.8651
+./evaluation/abalone/datasets/SMOTENC/2.csv,0.8571,2,4177,5299,0.9071,0.883,0.8319,0.8711,0.9152,0.9417,0.8997,0.7682,0.8871,0.8571
+./evaluation/abalone/datasets/SMOTENC/3.csv,0.8571,2,4177,5299,0.9047,0.8892,0.8367,0.8783,0.9251,0.9432,0.8981,0.7809,0.8937,0.8333
+./evaluation/abalone/datasets/SMOTENC/4.csv,0.8571,2,4177,5299,0.9052,0.8925,0.8287,0.8852,0.9526,0.9457,0.9058,0.7938,0.9,0.8333
+./evaluation/abalone/datasets/SMOTENC/5.csv,0.8571,2,4177,5299,0.9026,0.8882,0.8355,0.8781,0.9273,0.945,0.9036,0.7806,0.8931,0.8333
+./evaluation/abalone/datasets/SMOTENC/6.csv,0.8571,2,4177,5299,0.9068,0.8906,0.8336,0.8816,0.9383,0.9456,0.9031,0.7876,0.8966,0.8333
+./evaluation/abalone/datasets/SMOTENC/7.csv,0.8571,2,4177,5299,0.9068,0.8868,0.8415,0.874,0.9097,0.9393,0.8964,0.774,0.8897,0.8333
+./evaluation/abalone/datasets/SMOTENC/8.csv,0.8571,2,4177,5299,0.9004,0.8943,0.8398,0.8847,0.9361,0.9457,0.8993,0.7928,0.8996,0.8651
+./evaluation/abalone/datasets/SMOTENC/9.csv,0.8571,2,4177,5299,0.9038,0.8858,0.8375,0.8749,0.9185,0.9402,0.8958,0.7753,0.8899,0.8333
+./evaluation/abalone/datasets/SMOTENC/10.csv,0.8571,2,4177,5299,0.9016,0.8939,0.8343,0.8848,0.9427,0.9446,0.8977,0.7929,0.9,0.8571

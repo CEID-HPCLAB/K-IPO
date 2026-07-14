@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/airlines/datasets/SMOTENC/1.csv,0.7143,0,16427,20907,0.8008,0.7962,0.7458,0.7738,0.8047,0.8626,0.8227,0.5907,0.7972,0.7048
+./evaluation/airlines/datasets/SMOTENC/2.csv,0.7143,0,16427,20907,0.8058,0.7938,0.7445,0.7682,0.7935,0.859,0.8208,0.5838,0.7937,0.7714
+./evaluation/airlines/datasets/SMOTENC/3.csv,0.7143,0,16427,20907,0.8058,0.7938,0.7445,0.7682,0.7935,0.859,0.8208,0.5838,0.7937,0.7714
+./evaluation/airlines/datasets/SMOTENC/4.csv,0.7143,0,16427,20907,0.8032,0.8024,0.7619,0.7735,0.7854,0.8639,0.8273,0.5985,0.8002,0.7714
+./evaluation/airlines/datasets/SMOTENC/5.csv,0.8095,0,16427,20907,0.8016,0.8014,0.7633,0.7732,0.7838,0.8617,0.8252,0.597,0.7992,0.7333
+./evaluation/airlines/datasets/SMOTENC/6.csv,0.619,0,16427,20907,0.8059,0.7893,0.7395,0.7654,0.7938,0.8584,0.8174,0.5763,0.7899,0.7333
+./evaluation/airlines/datasets/SMOTENC/7.csv,0.7143,0,16427,20907,0.8034,0.8039,0.7696,0.7736,0.7779,0.8645,0.8259,0.6008,0.8007,0.7048
+./evaluation/airlines/datasets/SMOTENC/8.csv,0.7143,0,16427,20907,0.8033,0.7893,0.7316,0.7667,0.8055,0.8621,0.8274,0.5777,0.7914,0.7333
+./evaluation/airlines/datasets/SMOTENC/9.csv,0.7143,0,16427,20907,0.7975,0.8012,0.7596,0.7715,0.7838,0.8648,0.8261,0.5958,0.799,0.7714
+./evaluation/airlines/datasets/SMOTENC/10.csv,0.7143,0,16427,20907,0.7975,0.8012,0.7596,0.7715,0.7838,0.8648,0.8261,0.5958,0.799,0.7714

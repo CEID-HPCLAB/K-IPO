@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/lines-overload-50/datasets/TabDDPM/1.csv,0.1123,0,4368,5663,0.8377,0.9956,0.9929,0.9949,0.9969,0.9998,0.9997,0.991,0.9958,0.6355
+./evaluation/lines-overload-50/datasets/TabDDPM/2.csv,0.1573,0,4368,5663,0.6698,0.9956,0.9939,0.9949,0.9959,0.9997,0.9996,0.991,0.9956,0.639
+./evaluation/lines-overload-50/datasets/TabDDPM/3.csv,0.1516,0,4368,5663,0.6773,0.9947,0.9928,0.9938,0.9949,0.9997,0.9996,0.9892,0.9947,0.6468
+./evaluation/lines-overload-50/datasets/TabDDPM/4.csv,0.1922,0,4368,5663,0.6762,0.9956,0.9939,0.9949,0.9959,0.9997,0.9996,0.991,0.9956,0.6216
+./evaluation/lines-overload-50/datasets/TabDDPM/5.csv,0.1981,0,4368,5663,0.6799,0.9943,0.9958,0.9933,0.9907,0.9994,0.9993,0.9883,0.9938,0.6277
+./evaluation/lines-overload-50/datasets/TabDDPM/6.csv,0.1563,0,4368,5663,0.6751,0.9938,0.9898,0.9928,0.9959,0.9996,0.9995,0.9874,0.9941,0.6407
+./evaluation/lines-overload-50/datasets/TabDDPM/7.csv,0.088,0,4368,5663,0.7695,0.9934,0.9879,0.9924,0.9969,0.9996,0.9995,0.9866,0.9938,0.6195
+./evaluation/lines-overload-50/datasets/TabDDPM/8.csv,0.1497,0,4368,5663,0.6775,0.9956,0.9899,0.9949,1.0,0.9998,0.9997,0.9911,0.9961,0.6255
+./evaluation/lines-overload-50/datasets/TabDDPM/9.csv,0.0681,0,4368,5663,0.7044,0.9956,0.9929,0.9949,0.9969,0.9997,0.9997,0.991,0.9958,0.626
+./evaluation/lines-overload-50/datasets/TabDDPM/10.csv,0.0159,0,4368,5663,0.7583,0.9951,0.9919,0.9944,0.9969,0.9997,0.9996,0.9901,0.9954,0.6277

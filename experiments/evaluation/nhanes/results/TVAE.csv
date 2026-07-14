@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/nhanes/datasets/TVAE/1.csv,0.619,0,2105,2679,0.6916,0.8479,0.854,0.8206,0.7913,0.8882,0.8536,0.6915,0.8409,0.4286
+./evaluation/nhanes/datasets/TVAE/2.csv,0.619,0,2105,2679,0.692,0.8657,0.8622,0.8475,0.8391,0.9064,0.8752,0.7318,0.8624,0.4762
+./evaluation/nhanes/datasets/TVAE/3.csv,0.619,0,2105,2679,0.6855,0.8601,0.8636,0.838,0.8174,0.8986,0.8659,0.7182,0.8548,0.4286
+./evaluation/nhanes/datasets/TVAE/4.csv,0.619,0,2105,2679,0.7163,0.8582,0.864,0.8349,0.8109,0.9029,0.8786,0.7141,0.8523,0.4643
+./evaluation/nhanes/datasets/TVAE/5.csv,0.619,0,2105,2679,0.6804,0.8694,0.8771,0.8471,0.8217,0.9012,0.8746,0.7363,0.8635,0.4286
+./evaluation/nhanes/datasets/TVAE/6.csv,0.619,0,2105,2679,0.7154,0.8591,0.8541,0.8389,0.8283,0.9033,0.8823,0.7169,0.8553,0.4762
+./evaluation/nhanes/datasets/TVAE/7.csv,0.619,0,2105,2679,0.6981,0.8461,0.8357,0.832,0.8391,0.8922,0.8661,0.6982,0.8452,0.4881
+./evaluation/nhanes/datasets/TVAE/8.csv,0.619,0,2105,2679,0.6986,0.861,0.8588,0.8424,0.8326,0.899,0.8641,0.7226,0.8575,0.5
+./evaluation/nhanes/datasets/TVAE/9.csv,0.619,0,2105,2679,0.7126,0.8685,0.8656,0.8483,0.8348,0.9137,0.8893,0.7348,0.8643,0.5833
+./evaluation/nhanes/datasets/TVAE/10.csv,0.619,0,2105,2679,0.6976,0.861,0.8585,0.843,0.8348,0.9063,0.8872,0.7234,0.8578,0.5

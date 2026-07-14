@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/fried/datasets/CTGAN/1.csv,0.3778,0,22469,28596,0.8072,0.9225,0.9346,0.9067,0.8807,0.9627,0.9657,0.8417,0.9172,0.4762
+./evaluation/fried/datasets/CTGAN/2.csv,0.0222,0,22469,28596,0.7857,0.9324,0.954,0.9183,0.8851,0.9673,0.9699,0.8626,0.9265,0.5714
+./evaluation/fried/datasets/CTGAN/3.csv,0.3333,1,22469,28596,0.8058,0.9263,0.9464,0.9108,0.8778,0.9679,0.9692,0.8499,0.9202,0.3651
+./evaluation/fried/datasets/CTGAN/4.csv,0.5556,0,22469,28596,0.8637,0.9492,0.9637,0.9392,0.916,0.9832,0.9832,0.8965,0.9451,0.5873
+./evaluation/fried/datasets/CTGAN/5.csv,0.4667,1,22469,28596,0.8004,0.9185,0.9199,0.9032,0.887,0.9632,0.9658,0.8333,0.9146,0.3968
+./evaluation/fried/datasets/CTGAN/6.csv,0.1556,0,22469,28596,0.8439,0.9471,0.9559,0.9371,0.9192,0.982,0.9821,0.8921,0.9436,0.619
+./evaluation/fried/datasets/CTGAN/7.csv,0.4667,0,22469,28596,0.8474,0.9406,0.9462,0.9295,0.9133,0.9779,0.9785,0.8787,0.9372,0.5397
+./evaluation/fried/datasets/CTGAN/8.csv,0.2889,0,22469,28596,0.8698,0.949,0.9511,0.9397,0.9286,0.9833,0.9835,0.8957,0.9464,0.381
+./evaluation/fried/datasets/CTGAN/9.csv,0.1556,0,22469,28596,0.755,0.9191,0.9524,0.9001,0.8535,0.9559,0.96,0.8362,0.9109,0.619
+./evaluation/fried/datasets/CTGAN/10.csv,0.5556,0,22469,28596,0.824,0.9298,0.9369,0.9164,0.8968,0.9707,0.9723,0.8566,0.9257,0.5873

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/bank32nh/datasets/GaussianCopula/1.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/2.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/3.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/4.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/5.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/6.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/7.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/8.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/9.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857
+./evaluation/bank32nh/datasets/GaussianCopula/10.csv,0.4113,0,6213,7908,0.7389,0.8935,0.8772,0.8771,0.8783,0.9525,0.9452,0.7841,0.8916,0.2857

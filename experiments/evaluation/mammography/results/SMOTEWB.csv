@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/mammography/datasets/SMOTEWB/1.csv,0.8667,0,11183,15291,0.9946,0.9866,0.9728,0.9847,0.9973,0.9971,0.995,0.9733,0.9879,0.5714
+./evaluation/mammography/datasets/SMOTEWB/2.csv,0.8667,0,11183,15291,0.9946,0.9855,0.9704,0.9835,0.9973,0.9971,0.995,0.9711,0.9869,0.6032
+./evaluation/mammography/datasets/SMOTEWB/3.csv,0.8667,0,11183,15291,0.9946,0.985,0.9706,0.9829,0.9958,0.997,0.9949,0.97,0.9863,0.5714
+./evaluation/mammography/datasets/SMOTEWB/4.csv,0.8667,0,11183,15291,0.9946,0.9858,0.9746,0.9837,0.9931,0.997,0.9949,0.9713,0.9867,0.6032
+./evaluation/mammography/datasets/SMOTEWB/5.csv,0.8667,0,11183,15291,0.9947,0.9863,0.9718,0.9844,0.9977,0.9971,0.995,0.9727,0.9877,0.6032
+./evaluation/mammography/datasets/SMOTEWB/6.csv,0.8667,0,11183,15291,0.9946,0.9853,0.9733,0.9832,0.9935,0.9971,0.995,0.9704,0.9863,0.6032
+./evaluation/mammography/datasets/SMOTEWB/7.csv,0.8667,0,11183,15291,0.9947,0.9861,0.9714,0.9842,0.9977,0.997,0.9949,0.9723,0.9876,0.6032
+./evaluation/mammography/datasets/SMOTEWB/8.csv,0.8667,0,11183,15291,0.9946,0.9845,0.9677,0.9824,0.9981,0.9971,0.995,0.9693,0.9862,0.6032
+./evaluation/mammography/datasets/SMOTEWB/9.csv,0.8667,0,11183,15291,0.9946,0.9851,0.9706,0.9831,0.9962,0.997,0.9949,0.9703,0.9865,0.5397
+./evaluation/mammography/datasets/SMOTEWB/10.csv,0.8667,0,11183,15291,0.9946,0.9846,0.9696,0.9826,0.9962,0.997,0.9949,0.9694,0.9861,0.6032

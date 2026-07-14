@@ -1,0 +1,7 @@
+shap,sofi,GAMINet
+safety,safety,buying
+buying,maint,maint
+maint,lug_boot,doors
+doors,persons,persons
+persons,doors,lug_boot
+lug_boot,buying,safety

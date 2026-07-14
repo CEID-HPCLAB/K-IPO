@@ -1,0 +1,16 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/car-eval-4/datasets/K-IPO/1.csv,1.0,6,1728,2327,0.9855,1,1,1,1,1,1,1,1,0.8929
+./evaluation/car-eval-4/datasets/K-IPO/2.csv,1.0,6,1728,2327,0.9882,1,1,1,1,1,1,1,1,0.8095
+./evaluation/car-eval-4/datasets/K-IPO/3.csv,1.0,6,1728,2327,0.9887,1,1,1,1,1,1,1,1,0.8929
+./evaluation/car-eval-4/datasets/K-IPO/4.csv,1.0,6,1728,2327,0.9898,1,1,1,1,1,1,1,1,0.8095
+./evaluation/car-eval-4/datasets/K-IPO/5.csv,1.0,6,1728,2327,0.9887,1,1,1,1,1,1,1,1,0.8929
+./evaluation/car-eval-4/datasets/K-IPO/6.csv,1.0,6,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8929
+./evaluation/car-eval-4/datasets/K-IPO/7.csv,1.0,6,1728,2327,0.9898,1,1,1,1,1,1,1,1,0.8095
+./evaluation/car-eval-4/datasets/K-IPO/8.csv,1.0,6,1728,2327,0.9882,1,1,1,1,1,1,1,1,0.8929
+./evaluation/car-eval-4/datasets/K-IPO/9.csv,1.0,6,1728,2327,0.9882,1,1,1,1,1,1,1,1,0.8929
+./evaluation/car-eval-4/datasets/K-IPO/10.csv,1.0,6,1728,2327,0.9887,1,1,1,1,1,1,1,1,0.8095
+
+
+
+./evaluation/car-eval-4/datasets/K-IPO/12.csv,0.8667,3,1728,2327,0.986,1,1,1,1,1,1,1,1,82.1429
+

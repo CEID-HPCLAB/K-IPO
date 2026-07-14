@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/1.csv,0.3235,0,11464,14589,0.9149,0.9539,0.9632,0.9453,0.9284,0.9849,0.9855,0.9062,0.9507,0.5635
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/2.csv,0.4118,0,11464,14589,0.9159,0.9519,0.9529,0.9432,0.934,0.9849,0.9854,0.9018,0.9496,0.6032
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/3.csv,0.2647,1,11464,14589,0.9171,0.9522,0.9564,0.9434,0.9308,0.9855,0.9857,0.9023,0.9495,0.3095
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/4.csv,0.3971,0,11464,14589,0.9171,0.9519,0.9516,0.9433,0.9352,0.985,0.9856,0.9016,0.9498,0.6429
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/5.csv,0.3529,1,11464,14589,0.9147,0.9501,0.9441,0.9416,0.9392,0.9851,0.9854,0.8981,0.9488,0.4365
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/6.csv,0.2206,0,11464,14589,0.9186,0.9525,0.9589,0.9437,0.9296,0.9855,0.9858,0.9035,0.9497,0.5238
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/7.csv,0.2059,1,11464,14589,0.9142,0.9527,0.9673,0.9435,0.9208,0.9841,0.9847,0.9037,0.9487,0.5952
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/8.csv,0.3676,0,11464,14589,0.9134,0.9519,0.9534,0.9432,0.9332,0.9844,0.985,0.9016,0.9495,0.4206
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/9.csv,0.2794,1,11464,14589,0.9147,0.9541,0.9701,0.945,0.9212,0.9846,0.985,0.9065,0.95,0.5159
+./evaluation/online-shoppers-purchasing-intention/datasets/TabDDPM/10.csv,0.1324,1,11464,14589,0.9175,0.9532,0.9748,0.9437,0.9144,0.9844,0.9848,0.9051,0.9484,0.4048

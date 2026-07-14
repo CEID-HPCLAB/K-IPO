@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/car-eval-4/datasets/CTGAN/1.csv,0.8667,3,1728,2327,0.9678,0.9839,0.9639,0.9816,1,0.9937,0.9859,0.9678,0.9859,0.8929
+./evaluation/car-eval-4/datasets/CTGAN/2.csv,1.0,6,1728,2327,0.9672,0.9828,0.9615,0.9804,1,0.9902,0.9768,0.9657,0.985,0.8929
+./evaluation/car-eval-4/datasets/CTGAN/3.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9934,0.9847,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/CTGAN/4.csv,1.0,6,1728,2327,0.9618,0.9828,0.9615,0.9804,1,0.9931,0.9842,0.9657,0.985,0.8929
+./evaluation/car-eval-4/datasets/CTGAN/5.csv,0.8667,3,1728,2327,0.971,0.9818,0.9592,0.9792,1,0.9924,0.9827,0.9636,0.984,0.8095
+./evaluation/car-eval-4/datasets/CTGAN/6.csv,1.0,6,1728,2327,0.9678,0.9828,0.9615,0.9804,1,0.9933,0.9855,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/CTGAN/7.csv,0.8667,3,1728,2327,0.9704,0.9839,0.9639,0.9816,1,0.9945,0.9872,0.9678,0.9859,0.8095
+./evaluation/car-eval-4/datasets/CTGAN/8.csv,1.0,6,1728,2327,0.9683,0.9828,0.9615,0.9804,1,0.9932,0.9842,0.9657,0.985,0.8929
+./evaluation/car-eval-4/datasets/CTGAN/9.csv,1.0,6,1728,2327,0.9694,0.9828,0.9615,0.9804,1,0.9941,0.9879,0.9657,0.985,0.8214
+./evaluation/car-eval-4/datasets/CTGAN/10.csv,1.0,6,1728,2327,0.9661,0.9828,0.9615,0.9804,1,0.9906,0.9779,0.9657,0.985,0.8929

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/pen-digits/datasets/TVAE/1.csv,0.9167,3,10992,13910,0.9959,0.9977,0.9971,0.9973,0.9975,0.9999,0.9999,0.9952,0.9976,0.6508
+./evaluation/pen-digits/datasets/TVAE/2.csv,0.8833,2,10992,13910,0.9967,0.998,0.9975,0.9977,0.9979,0.9996,0.9997,0.996,0.998,0.6349
+./evaluation/pen-digits/datasets/TVAE/3.csv,0.9,2,10992,13910,0.9969,0.9975,0.9966,0.9971,0.9975,1.0,0.9999,0.9949,0.9975,0.6243
+./evaluation/pen-digits/datasets/TVAE/4.csv,0.95,8,10992,13910,0.9955,0.9986,0.9996,0.9983,0.9971,1.0,1.0,0.9971,0.9984,0.6402
+./evaluation/pen-digits/datasets/TVAE/5.csv,0.9333,5,10992,13910,0.996,0.9969,0.9979,0.9964,0.995,0.9997,0.9997,0.9938,0.9967,0.6508
+./evaluation/pen-digits/datasets/TVAE/6.csv,0.8833,3,10992,13910,0.996,0.9987,0.9983,0.9985,0.9987,1.0,1.0,0.9974,0.9987,0.6561
+./evaluation/pen-digits/datasets/TVAE/7.csv,0.9,2,10992,13910,0.996,0.9984,0.9983,0.9981,0.9979,0.9999,0.9999,0.9967,0.9983,0.6508
+./evaluation/pen-digits/datasets/TVAE/8.csv,0.8833,3,10992,13910,0.9967,0.998,0.9975,0.9977,0.9979,1.0,1.0,0.996,0.998,0.6561
+./evaluation/pen-digits/datasets/TVAE/9.csv,0.9167,2,10992,13910,0.9965,0.9978,0.9971,0.9975,0.9979,0.9996,0.9997,0.9956,0.9979,0.6349
+./evaluation/pen-digits/datasets/TVAE/10.csv,0.9167,3,10992,13910,0.997,0.998,0.9971,0.9977,0.9983,1.0,1.0,0.996,0.9981,0.6561

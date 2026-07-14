@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/bank-marketing/datasets/TVAE/1.csv,0.3,2,4521,5598,0.8776,0.9143,0.9009,0.8999,0.899,0.9664,0.9622,0.825,0.9124,0.4
+./evaluation/bank-marketing/datasets/TVAE/2.csv,0.25,2,4521,5598,0.8725,0.9183,0.9209,0.9028,0.8854,0.9682,0.9655,0.8329,0.9142,0.3619
+./evaluation/bank-marketing/datasets/TVAE/3.csv,0.25,2,4521,5598,0.8687,0.9156,0.8979,0.9027,0.9094,0.9656,0.9581,0.8296,0.9148,0.3905
+./evaluation/bank-marketing/datasets/TVAE/4.csv,0.25,2,4521,5598,0.8707,0.9152,0.9069,0.9003,0.8938,0.966,0.9623,0.8266,0.9125,0.381
+./evaluation/bank-marketing/datasets/TVAE/5.csv,0.2333,2,4521,5598,0.8749,0.9214,0.9198,0.9071,0.8948,0.9678,0.9634,0.8393,0.9181,0.3619
+./evaluation/bank-marketing/datasets/TVAE/6.csv,0.25,2,4521,5598,0.8776,0.9179,0.9172,0.9026,0.8885,0.9678,0.9629,0.8319,0.9142,0.419
+./evaluation/bank-marketing/datasets/TVAE/7.csv,0.35,2,4521,5598,0.8781,0.9147,0.8937,0.9015,0.9094,0.9662,0.9584,0.8265,0.9141,0.4286
+./evaluation/bank-marketing/datasets/TVAE/8.csv,0.25,2,4521,5598,0.8729,0.9183,0.9221,0.9033,0.8865,0.9676,0.9635,0.834,0.9143,0.3905
+./evaluation/bank-marketing/datasets/TVAE/9.csv,0.2333,2,4521,5598,0.8821,0.9161,0.8958,0.903,0.9104,0.967,0.9623,0.8292,0.9154,0.3524
+./evaluation/bank-marketing/datasets/TVAE/10.csv,0.3333,2,4521,5598,0.8711,0.9196,0.9229,0.9043,0.8865,0.9664,0.9608,0.8356,0.9155,0.381

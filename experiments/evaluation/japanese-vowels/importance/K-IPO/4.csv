@@ -1,0 +1,15 @@
+shap,sofi,GAMINet
+coefficient6,coefficient1,coefficient6
+coefficient7,coefficient10,coefficient8
+coefficient1,frame,utterance
+utterance,coefficient4,coefficient3
+coefficient3,coefficient2,coefficient9
+coefficient2,coefficient7,coefficient1
+coefficient9,coefficient6,coefficient12
+coefficient8,utterance,coefficient4
+coefficient10,coefficient5,coefficient7
+coefficient5,coefficient9,coefficient5
+coefficient4,coefficient3,coefficient2
+frame,coefficient8,coefficient11
+coefficient12,coefficient11,frame
+coefficient11,coefficient12,coefficient10

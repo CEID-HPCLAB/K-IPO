@@ -1,0 +1,6 @@
+shap,sofi,GAMINet
+Mean_R,Mean_R,Mean_G
+Mean_G,GLCM_Pan,Mean_R
+SD_Plan,Mean_G,Mean_NIR
+Mean_NIR,Mean_NIR,GLCM_Pan
+GLCM_Pan,SD_Plan,SD_Plan

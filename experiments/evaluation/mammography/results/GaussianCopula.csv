@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/mammography/datasets/GaussianCopula/1.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/2.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/3.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/4.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/5.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/6.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/7.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/8.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/9.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444
+./evaluation/mammography/datasets/GaussianCopula/10.csv,0.6,0,11183,15291,0.9617,0.9814,0.9808,0.9782,0.9756,0.9973,0.9968,0.9619,0.9806,0.4444

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/mammography/datasets/TVAE/1.csv,0.7333,0,11183,15291,0.9729,0.9846,0.9717,0.9823,0.9931,0.9975,0.9962,0.9689,0.9857,0.5079
+./evaluation/mammography/datasets/TVAE/2.csv,0.7333,0,11183,15291,0.9725,0.9845,0.977,0.982,0.987,0.9974,0.9957,0.9684,0.9848,0.5397
+./evaluation/mammography/datasets/TVAE/3.csv,0.7333,0,11183,15291,0.9743,0.9864,0.9793,0.9843,0.9893,0.9976,0.9962,0.9724,0.9868,0.5397
+./evaluation/mammography/datasets/TVAE/4.csv,0.7333,0,11183,15291,0.9729,0.9846,0.9763,0.9822,0.9882,0.997,0.9955,0.9687,0.9851,0.5079
+./evaluation/mammography/datasets/TVAE/5.csv,0.7333,0,11183,15291,0.9727,0.985,0.9759,0.9826,0.9893,0.9974,0.996,0.9694,0.9855,0.5397
+./evaluation/mammography/datasets/TVAE/6.csv,0.7333,0,11183,15291,0.9714,0.9841,0.9713,0.9817,0.9924,0.9972,0.9954,0.9679,0.9852,0.5556
+./evaluation/mammography/datasets/TVAE/7.csv,0.7333,0,11183,15291,0.9724,0.9858,0.9781,0.9835,0.9889,0.9973,0.9955,0.9711,0.9862,0.5397
+./evaluation/mammography/datasets/TVAE/8.csv,0.7333,0,11183,15291,0.9728,0.9841,0.9734,0.9817,0.9901,0.9971,0.9954,0.9678,0.9849,0.5873
+./evaluation/mammography/datasets/TVAE/9.csv,0.8667,0,11183,15291,0.9728,0.9858,0.9774,0.9835,0.9897,0.9974,0.996,0.9711,0.9863,0.5397
+./evaluation/mammography/datasets/TVAE/10.csv,0.7333,0,11183,15291,0.9734,0.9858,0.9756,0.9835,0.9916,0.9973,0.9957,0.9711,0.9865,0.5397

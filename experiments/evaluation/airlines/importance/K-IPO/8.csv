@@ -1,0 +1,8 @@
+shap,sofi,GAMINet
+Airline,AirportFrom,Airline
+Time,Flight,Time
+Length,AirportTo,Flight
+Flight,Time,DayOfWeek
+AirportTo,Airline,AirportTo
+AirportFrom,DayOfWeek,Length
+DayOfWeek,Length,AirportFrom

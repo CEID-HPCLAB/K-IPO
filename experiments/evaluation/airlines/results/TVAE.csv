@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/airlines/datasets/TVAE/1.csv,0.619,2,16427,21026,0.7902,0.8513,0.8377,0.8262,0.8153,0.905,0.896,0.6967,0.847,0.6571
+./evaluation/airlines/datasets/TVAE/2.csv,0.3333,2,16427,20907,0.7961,0.8446,0.8333,0.8159,0.7999,0.9032,0.896,0.6824,0.839,0.6571
+./evaluation/airlines/datasets/TVAE/3.csv,0.0476,1,16427,20907,0.7954,0.844,0.8269,0.8176,0.8097,0.8958,0.8823,0.6822,0.8397,0.6762
+./evaluation/airlines/datasets/TVAE/4.csv,0.5238,2,16427,20907,0.7961,0.8416,0.8201,0.8155,0.8122,0.9011,0.8886,0.6776,0.8379,0.6762
+./evaluation/airlines/datasets/TVAE/5.csv,0.3333,2,16427,21026,0.7935,0.8431,0.8161,0.8216,0.8298,0.906,0.8985,0.6834,0.8415,0.6381
+./evaluation/airlines/datasets/TVAE/6.csv,0.619,2,16427,20907,0.799,0.8415,0.818,0.8157,0.8145,0.9034,0.8941,0.6773,0.8381,0.6667
+./evaluation/airlines/datasets/TVAE/7.csv,0.619,2,16427,20907,0.7903,0.8391,0.8165,0.8136,0.8125,0.9045,0.8948,0.6732,0.8357,0.6571
+./evaluation/airlines/datasets/TVAE/8.csv,0.4286,2,16427,20907,0.7976,0.841,0.8218,0.8131,0.8047,0.9005,0.8929,0.675,0.8364,0.7048
+./evaluation/airlines/datasets/TVAE/9.csv,0.5238,2,16427,20907,0.7867,0.8364,0.8129,0.8106,0.81,0.9005,0.89,0.6678,0.8331,0.7333
+./evaluation/airlines/datasets/TVAE/10.csv,0.3333,2,16427,20907,0.7892,0.8374,0.8165,0.8083,0.8002,0.8965,0.886,0.6672,0.8327,0.6381

@@ -1,0 +1,7 @@
+Method,Average_Rank
+K-IPO,1.7
+SMOTE,3.425
+TabDDPM,3.45
+GaussianCopula,3.875
+CTGAN,3.925
+TVAE,4.625

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/ai4i2020/datasets/GaussianCopula/1.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/2.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/3.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/4.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/5.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/6.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/7.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/8.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/9.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571
+./evaluation/ai4i2020/datasets/GaussianCopula/10.csv,0.7333,1,9981,13499,0.9427,0.9676,0.9726,0.9618,0.9512,0.9913,0.991,0.9338,0.9655,0.8571

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/churn/datasets/SMOTENC/1.csv,0.8,0,4722,6009,0.9259,0.9551,0.9449,0.9475,0.9505,0.9875,0.9857,0.9085,0.9545,0.449
+./evaluation/churn/datasets/SMOTENC/2.csv,0.8105,0,4722,6009,0.9282,0.9509,0.9384,0.9428,0.9476,0.9859,0.9839,0.9,0.9505,0.4558
+./evaluation/churn/datasets/SMOTENC/3.csv,0.8105,0,4722,6009,0.9282,0.9509,0.9384,0.9428,0.9476,0.9859,0.9839,0.9,0.9505,0.4558
+./evaluation/churn/datasets/SMOTENC/4.csv,0.8105,0,4722,6009,0.9282,0.9509,0.9384,0.9428,0.9476,0.9859,0.9839,0.9,0.9505,0.4558
+./evaluation/churn/datasets/SMOTENC/5.csv,0.8,0,4722,6009,0.9259,0.9551,0.9449,0.9475,0.9505,0.9875,0.9857,0.9085,0.9545,0.449
+./evaluation/churn/datasets/SMOTENC/6.csv,0.8,0,4722,6009,0.9259,0.9551,0.9536,0.9471,0.9408,0.9851,0.9832,0.9082,0.9533,0.4558
+./evaluation/churn/datasets/SMOTENC/7.csv,0.7368,0,4722,6009,0.9259,0.9534,0.9508,0.9452,0.9398,0.9861,0.9843,0.9048,0.9517,0.4218
+./evaluation/churn/datasets/SMOTENC/8.csv,0.7474,0,4722,6009,0.9253,0.9542,0.9414,0.9469,0.9524,0.9874,0.9854,0.9068,0.954,0.4354
+./evaluation/churn/datasets/SMOTENC/9.csv,0.7474,0,4722,6009,0.9253,0.9542,0.9414,0.9469,0.9524,0.9874,0.9854,0.9068,0.954,0.4354
+./evaluation/churn/datasets/SMOTENC/10.csv,0.7474,0,4722,6009,0.9253,0.9542,0.9414,0.9469,0.9524,0.9874,0.9854,0.9068,0.954,0.4354

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/1.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/2.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/3.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/4.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/5.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/6.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/7.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/8.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/9.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627
+./evaluation/ur3-cobot-ops/datasets/GaussianCopula/10.csv,0.5474,0,7355,9572,0.9031,0.9593,0.9644,0.9519,0.9397,0.9882,0.9878,0.9168,0.9568,0.627

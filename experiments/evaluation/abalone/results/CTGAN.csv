@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/abalone/datasets/CTGAN/1.csv,-0.0714,0,4177,5299,0.9016,0.9363,0.9731,0.9217,0.8756,0.9799,0.9779,0.8718,0.9287,0.8016
+./evaluation/abalone/datasets/CTGAN/2.csv,0.2857,0,4177,5299,0.8927,0.9415,0.9828,0.9279,0.8789,0.9812,0.9795,0.8829,0.9337,0.8095
+./evaluation/abalone/datasets/CTGAN/3.csv,0.4286,1,4177,5299,0.9045,0.9443,0.9963,0.9307,0.8733,0.9811,0.9792,0.89,0.9354,0.8095
+./evaluation/abalone/datasets/CTGAN/4.csv,-0.0714,0,4177,5299,0.8967,0.9363,0.9439,0.9241,0.9053,0.9816,0.9799,0.87,0.9324,0.8095
+./evaluation/abalone/datasets/CTGAN/5.csv,0.4286,0,4177,5299,0.8879,0.934,0.9494,0.9207,0.8943,0.9773,0.9762,0.8658,0.929,0.8333
+./evaluation/abalone/datasets/CTGAN/6.csv,0.2143,0,4177,5299,0.8908,0.9358,0.9618,0.922,0.8855,0.9802,0.9784,0.8699,0.9295,0.8095
+./evaluation/abalone/datasets/CTGAN/7.csv,0.5,0,4177,5299,0.899,0.9425,0.9817,0.9292,0.8822,0.9821,0.9803,0.8846,0.9349,0.7778
+./evaluation/abalone/datasets/CTGAN/8.csv,0.2857,0,4177,5299,0.8997,0.941,0.9646,0.9286,0.8954,0.9815,0.9798,0.8804,0.9353,0.8095
+./evaluation/abalone/datasets/CTGAN/9.csv,0.1429,0,4177,5299,0.8986,0.934,0.9417,0.9215,0.9031,0.9815,0.9796,0.8658,0.9301,0.873
+./evaluation/abalone/datasets/CTGAN/10.csv,0.4286,0,4177,5299,0.8976,0.9392,0.9815,0.9249,0.8744,0.9802,0.9785,0.8781,0.931,0.8413

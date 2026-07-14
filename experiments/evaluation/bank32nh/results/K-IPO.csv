@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/bank32nh/datasets/K-IPO/1.csv,0.7702,5,6213,7908,0.954,0.9855,0.9741,0.9832,0.9926,0.9925,0.9798,0.9706,0.9864,0.4762
+./evaluation/bank32nh/datasets/K-IPO/2.csv,0.7782,5,6213,7953,0.955,0.9849,0.9742,0.9827,0.9913,0.9928,0.9829,0.9694,0.9857,0.4921
+./evaluation/bank32nh/datasets/K-IPO/3.csv,0.7661,5,6213,7908,0.9548,0.9893,0.9812,0.9876,0.9941,0.9932,0.9817,0.9782,0.9899,0.4127
+./evaluation/bank32nh/datasets/K-IPO/4.csv,0.7903,5,6213,7908,0.9538,0.9883,0.9806,0.9865,0.9926,0.9922,0.9794,0.9763,0.9888,0.5238
+./evaluation/bank32nh/datasets/K-IPO/5.csv,0.7702,5,6213,7953,0.9546,0.989,0.9821,0.9874,0.9927,0.9924,0.9808,0.9777,0.9894,0.4127
+./evaluation/bank32nh/datasets/K-IPO/6.csv,0.7702,5,6213,7908,0.9537,0.9855,0.9777,0.9832,0.9889,0.9921,0.9806,0.9705,0.9859,0.5079
+./evaluation/bank32nh/datasets/K-IPO/7.csv,0.7661,5,6213,7908,0.9542,0.9864,0.9747,0.9843,0.9941,0.9921,0.9802,0.9725,0.9874,0.5238
+./evaluation/bank32nh/datasets/K-IPO/8.csv,0.7863,5,6213,7953,0.9546,0.989,0.9843,0.9873,0.9905,0.9937,0.9832,0.9777,0.9892,0.4286
+./evaluation/bank32nh/datasets/K-IPO/9.csv,0.7742,6,6213,7953,0.9541,0.9881,0.9807,0.9863,0.992,0.9941,0.9842,0.9758,0.9885,0.4603
+./evaluation/bank32nh/datasets/K-IPO/10.csv,0.7742,5,6213,7908,0.9538,0.9874,0.9805,0.9854,0.9904,0.9927,0.9806,0.9744,0.9877,0.5079

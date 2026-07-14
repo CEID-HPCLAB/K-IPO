@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./evaluation/pen-digits/datasets/CTGAN/1.csv,0.2833,2,10992,13910,0.9929,0.9986,0.9992,0.9983,0.9975,1.0,1.0,0.9971,0.9984,0.619
+./evaluation/pen-digits/datasets/CTGAN/2.csv,0.3667,1,10992,13910,0.9918,0.998,0.9979,0.9977,0.9975,1.0,1.0,0.996,0.998,0.6402
+./evaluation/pen-digits/datasets/CTGAN/3.csv,0.1167,0,10992,13910,0.9912,0.9978,0.9962,0.9975,0.9987,0.9997,0.9998,0.9956,0.998,0.582
+./evaluation/pen-digits/datasets/CTGAN/4.csv,0.5333,0,10992,13910,0.9939,0.998,0.9987,0.9977,0.9966,0.9999,0.9999,0.996,0.9979,0.6614
+./evaluation/pen-digits/datasets/CTGAN/5.csv,0.55,2,10992,13910,0.9931,0.9975,0.9979,0.9971,0.9962,0.9999,0.9998,0.9949,0.9973,0.6085
+./evaluation/pen-digits/datasets/CTGAN/6.csv,0.2167,1,10992,13910,0.9917,0.9978,0.9971,0.9975,0.9979,0.9999,0.9999,0.9956,0.9979,0.6349
+./evaluation/pen-digits/datasets/CTGAN/7.csv,0.5333,0,10992,13910,0.9937,0.9975,0.9979,0.9971,0.9962,0.9998,0.9998,0.9949,0.9973,0.6455
+./evaluation/pen-digits/datasets/CTGAN/8.csv,0.5333,0,10992,13910,0.9927,0.9978,0.9987,0.9975,0.9962,0.9998,0.9998,0.9956,0.9976,0.672
+./evaluation/pen-digits/datasets/CTGAN/9.csv,0.45,0,10992,13910,0.9929,0.9975,0.9992,0.9971,0.995,0.9999,0.9999,0.9949,0.9972,0.5926
+./evaluation/pen-digits/datasets/CTGAN/10.csv,0.5,0,10992,13910,0.9943,0.9978,0.9975,0.9975,0.9975,0.9998,0.9998,0.9956,0.9978,0.6667
