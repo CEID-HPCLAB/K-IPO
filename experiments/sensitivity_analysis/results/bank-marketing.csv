@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/bank-marketing/0.6t_0.1ord.csv,0.6833,2,4521,5598,0.8912,0.9,0.8532,0.8881,0.926,0.9609,0.9392,0.8002,0.9033,0.419
+./sensitivity_analysis/datasets/bank-marketing/0.6t_0.3ord.csv,0.7667,5,4521,5598,0.9033,0.917,0.8934,0.906,0.9219,0.9682,0.9554,0.8343,0.9176,0.4095
+./sensitivity_analysis/datasets/bank-marketing/0.6t_0.5ord.csv,0.7833,8,4521,5598,0.9035,0.9214,0.9171,0.9074,0.8979,0.9682,0.9569,0.8393,0.9185,0.4571
+./sensitivity_analysis/datasets/bank-marketing/0.7t_0.1ord.csv,0.7167,2,4521,5598,0.8995,0.9089,0.88,0.8959,0.9125,0.9641,0.9498,0.8156,0.9094,0.419
+./sensitivity_analysis/datasets/bank-marketing/0.7t_0.3ord.csv,0.7833,5,4521,5598,0.8997,0.9089,0.8662,0.8975,0.9312,0.9672,0.9569,0.8175,0.9117,0.4286
+./sensitivity_analysis/datasets/bank-marketing/0.7t_0.5ord.csv,0.7,8,4521,5598,0.9029,0.921,0.9072,0.9084,0.9104,0.971,0.9646,0.8395,0.9197,0.4667
+./sensitivity_analysis/datasets/bank-marketing/0.8t_0.1ord.csv,0.8167,3,4521,5598,0.8971,0.9179,0.9015,0.9048,0.9083,0.9704,0.9603,0.8328,0.9167,0.4571
+./sensitivity_analysis/datasets/bank-marketing/0.8t_0.3ord.csv,0.8,5,4521,5598,0.9042,0.9205,0.9014,0.9086,0.9167,0.9689,0.9608,0.839,0.9201,0.4571
+./sensitivity_analysis/datasets/bank-marketing/0.8t_0.5ord.csv,0.8167,8,4521,5598,0.9051,0.9179,0.8895,0.9063,0.924,0.9703,0.9622,0.8339,0.9186,0.4667
+./sensitivity_analysis/datasets/bank-marketing/0.85t_0.1ord.csv,0.8667,4,4521,5598,0.8984,0.9058,0.8907,0.8904,0.8906,0.9642,0.9519,0.8081,0.9039,0.4571
+./sensitivity_analysis/datasets/bank-marketing/0.85t_0.3ord.csv,0.8667,5,4521,5598,0.9062,0.9183,0.9128,0.9045,0.8979,0.9693,0.9563,0.8343,0.9158,0.4857
+./sensitivity_analysis/datasets/bank-marketing/0.85t_0.5ord.csv,0.85,8,4521,5598,0.9055,0.9161,0.9032,0.9024,0.9021,0.9675,0.9579,0.8291,0.9143,0.4762

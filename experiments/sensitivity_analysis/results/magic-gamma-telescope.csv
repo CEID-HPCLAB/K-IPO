@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.6t_0.2ord.csv,0.9111,3,13565,17265,0.9595,0.9503,0.9483,0.9418,0.9355,0.9862,0.9839,0.8986,0.9485,0.4881
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.6t_0.4ord.csv,1.0,10,13565,17265,0.961,0.9496,0.9503,0.9406,0.9311,0.9854,0.984,0.897,0.9473,0.5238
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.6t_0.6ord.csv,1.0,10,13565,17265,0.96,0.9467,0.9368,0.9378,0.9389,0.9846,0.9827,0.8912,0.9457,0.5
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.7t_0.2ord.csv,0.9556,3,13565,17265,0.947,0.9361,0.9276,0.9253,0.923,0.9792,0.9771,0.8696,0.9345,0.4881
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.7t_0.4ord.csv,1.0,10,13565,17265,0.9456,0.9327,0.9267,0.9212,0.9159,0.9794,0.9763,0.8626,0.9306,0.5119
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.7t_0.6ord.csv,1.0,10,13565,17265,0.9618,0.9522,0.9626,0.943,0.9243,0.9835,0.9829,0.9025,0.9487,0.5
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.8t_0.2ord.csv,0.8667,3,13565,17265,0.9602,0.9535,0.951,0.9456,0.9405,0.9864,0.9847,0.9052,0.9519,0.5119
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.8t_0.4ord.csv,1.0,10,13565,17265,0.9626,0.9506,0.9494,0.9419,0.9345,0.9853,0.9837,0.8991,0.9486,0.5714
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.8t_0.6ord.csv,1.0,10,13565,17265,0.962,0.9515,0.9563,0.9427,0.9294,0.9843,0.9835,0.9009,0.9487,0.5238
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.9t_0.2ord.csv,0.9556,4,13565,17265,0.949,0.9377,0.9335,0.9268,0.9203,0.9823,0.9793,0.8727,0.9356,0.5
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.9t_0.4ord.csv,1.0,10,13565,17265,0.9592,0.947,0.9408,0.938,0.9351,0.983,0.9812,0.8917,0.9455,0.5
+./sensitivity_analysis/datasets/magic-gamma-telescope/0.9t_0.6ord.csv,1.0,10,13565,17265,0.9481,0.9286,0.9119,0.9171,0.9226,0.9797,0.9763,0.8546,0.9279,0.5238

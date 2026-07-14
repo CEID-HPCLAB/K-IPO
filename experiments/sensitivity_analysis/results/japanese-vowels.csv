@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/japanese-vowels/0.6t_0.1ord.csv,0.9341,1,9961,11684,0.9984,0.9974,0.9945,0.997,0.9995,1.0,0.9999,0.9948,0.9977,0.5952
+./sensitivity_analysis/datasets/japanese-vowels/0.6t_0.3ord.csv,0.956,5,9961,11684,0.9981,0.9964,0.9945,0.9958,0.997,0.9999,0.9999,0.9926,0.9964,0.5952
+./sensitivity_analysis/datasets/japanese-vowels/0.6t_0.5ord.csv,0.978,10,9961,11751,0.9982,0.9966,0.9951,0.9961,0.997,0.9999,0.9999,0.9931,0.9967,0.6349
+./sensitivity_analysis/datasets/japanese-vowels/0.7t_0.1ord.csv,0.9341,1,9961,11684,0.9983,0.9972,0.995,0.9968,0.9985,0.9999,0.9999,0.9943,0.9974,0.5556
+./sensitivity_analysis/datasets/japanese-vowels/0.7t_0.3ord.csv,0.956,6,9961,11684,0.9983,0.9961,0.9945,0.9955,0.9965,0.9999,0.9999,0.9921,0.9962,0.6111
+./sensitivity_analysis/datasets/japanese-vowels/0.7t_0.5ord.csv,0.956,10,9961,11684,0.998,0.9972,0.998,0.9967,0.9955,1.0,0.9999,0.9943,0.997,0.6032
+./sensitivity_analysis/datasets/japanese-vowels/0.8t_0.1ord.csv,0.9341,1,9961,11684,0.9985,0.9981,0.998,0.9978,0.9975,0.9999,0.9999,0.9961,0.998,0.5873
+./sensitivity_analysis/datasets/japanese-vowels/0.8t_0.3ord.csv,0.978,10,9961,11684,0.998,0.9968,0.9965,0.9963,0.996,0.9999,0.9999,0.9934,0.9967,0.6508
+./sensitivity_analysis/datasets/japanese-vowels/0.8t_0.5ord.csv,0.978,10,9961,11751,0.9982,0.9968,0.997,0.9963,0.9956,0.9999,0.9999,0.9935,0.9967,0.5873
+./sensitivity_analysis/datasets/japanese-vowels/0.85t_0.1ord.csv,0.9341,1,9961,11684,0.9984,0.9985,0.9965,0.9983,1,1.0,1.0,0.9969,0.9987,0.5952
+./sensitivity_analysis/datasets/japanese-vowels/0.85t_0.3ord.csv,0.956,6,9961,11684,0.998,0.9964,0.9965,0.9958,0.995,0.9999,0.9999,0.9926,0.9962,0.5952
+./sensitivity_analysis/datasets/japanese-vowels/0.85t_0.5ord.csv,0.978,10,9961,11751,0.9982,0.9968,0.997,0.9963,0.9956,0.9999,0.9999,0.9935,0.9967,0.5873

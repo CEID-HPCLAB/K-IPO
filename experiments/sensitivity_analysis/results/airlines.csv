@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/airlines/0.6t_0.2ord.csv,0.619,2,16427,20907,0.8532,0.8348,0.807,0.8112,0.8167,0.8922,0.8605,0.6652,0.8325,0.7238
+./sensitivity_analysis/datasets/airlines/0.6t_0.4ord.csv,0.7143,3,16427,20907,0.8561,0.8355,0.806,0.8146,0.8262,0.8956,0.8669,0.6689,0.8343,0.7048
+./sensitivity_analysis/datasets/airlines/0.6t_0.6ord.csv,0.9048,5,16427,20907,0.8593,0.8435,0.8207,0.8188,0.8172,0.8957,0.8646,0.6814,0.8402,0.7714
+./sensitivity_analysis/datasets/airlines/0.7t_0.2ord.csv,0.7143,2,16427,20907,0.8571,0.832,0.8054,0.8088,0.8139,0.8858,0.8532,0.6603,0.8298,0.7524
+./sensitivity_analysis/datasets/airlines/0.7t_0.4ord.csv,0.7143,3,16427,20907,0.85,0.8291,0.7951,0.8087,0.8253,0.8913,0.862,0.6567,0.8287,0.7714
+./sensitivity_analysis/datasets/airlines/0.7t_0.6ord.csv,0.7143,4,16427,20907,0.8606,0.8387,0.8195,0.8135,0.8089,0.8952,0.8674,0.6723,0.835,0.7714
+./sensitivity_analysis/datasets/airlines/0.8t_0.2ord.csv,0.8095,2,16427,20907,0.8584,0.8315,0.7978,0.8072,0.8172,0.8921,0.8692,0.6581,0.8298,0.7714
+./sensitivity_analysis/datasets/airlines/0.8t_0.4ord.csv,0.8095,3,16427,20907,0.8575,0.8379,0.8066,0.8144,0.8228,0.8919,0.8622,0.6709,0.836,0.8381
+./sensitivity_analysis/datasets/airlines/0.8t_0.6ord.csv,0.9048,5,16427,20907,0.8598,0.8378,0.7954,0.8227,0.8557,0.9,0.8789,0.6779,0.84,0.7905
+./sensitivity_analysis/datasets/airlines/0.9t_0.2ord.csv,0.9048,2,16427,20907,0.87,0.8471,0.8205,0.8274,0.8373,0.9072,0.8839,0.6924,0.8459,0.8381
+./sensitivity_analysis/datasets/airlines/0.9t_0.4ord.csv,0.9048,3,16427,20907,0.8596,0.8393,0.8113,0.8147,0.8184,0.895,0.8686,0.6731,0.8367,0.7714
+./sensitivity_analysis/datasets/airlines/0.9t_0.6ord.csv,0.9048,5,16427,20907,0.8607,0.8406,0.8075,0.8233,0.8438,0.8961,0.8662,0.6818,0.841,0.819

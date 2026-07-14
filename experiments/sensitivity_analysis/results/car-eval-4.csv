@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/car-eval-4/0.6t_0.2ord.csv,0.7333,2,1728,2327,0.9866,1,1,1,1,1,1,1,1,0.8095
+./sensitivity_analysis/datasets/car-eval-4/0.6t_0.4ord.csv,0.7333,2,1728,2327,0.9866,1,1,1,1,1,1,1,1,0.8095
+./sensitivity_analysis/datasets/car-eval-4/0.6t_0.6ord.csv,1.0,6,1728,2327,0.9887,1,1,1,1,1,1,1,1,0.8929
+./sensitivity_analysis/datasets/car-eval-4/0.7t_0.2ord.csv,0.7333,2,1728,2327,0.986,1,1,1,1,1,1,1,1,0.8214
+./sensitivity_analysis/datasets/car-eval-4/0.7t_0.4ord.csv,0.7333,2,1728,2327,0.9866,1,1,1,1,1,1,1,1,0.8095
+./sensitivity_analysis/datasets/car-eval-4/0.7t_0.6ord.csv,1.0,6,1728,2327,0.9844,0.9979,0.995,0.9975,1,0.999,0.9974,0.9956,0.9981,0.8929
+./sensitivity_analysis/datasets/car-eval-4/0.8t_0.2ord.csv,0.8667,3,1728,2327,0.9882,1,1,1,1,1,1,1,1,0.8095
+./sensitivity_analysis/datasets/car-eval-4/0.8t_0.4ord.csv,0.8667,3,1728,2327,0.986,1,1,1,1,1,1,1,1,0.8214
+./sensitivity_analysis/datasets/car-eval-4/0.8t_0.6ord.csv,1.0,6,1728,2327,0.9866,1,1,1,1,1,1,1,1,0.8929
+./sensitivity_analysis/datasets/car-eval-4/0.9t_0.2ord.csv,1.0,6,1728,2327,0.9871,1,1,1,1,1,1,1,1,0.8929
+./sensitivity_analysis/datasets/car-eval-4/0.9t_0.4ord.csv,1.0,6,1728,2327,0.9866,1,1,1,1,1,1,1,1,0.8929
+./sensitivity_analysis/datasets/car-eval-4/0.9t_0.6ord.csv,1.0,6,1728,2327,0.9893,1,1,1,1,1,1,1,1,0.8929

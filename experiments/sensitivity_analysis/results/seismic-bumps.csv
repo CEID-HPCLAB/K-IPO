@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/seismic-bumps/0.6t_0.1ord.csv,0.7143,2,2584,3379,0.9049,0.9098,0.8769,0.8985,0.9224,0.9627,0.9455,0.8191,0.9113,0.7238
+./sensitivity_analysis/datasets/seismic-bumps/0.6t_0.3ord.csv,0.7714,6,2584,3379,0.9127,0.9075,0.8696,0.8959,0.9241,0.9608,0.9454,0.8143,0.9096,0.7143
+./sensitivity_analysis/datasets/seismic-bumps/0.6t_0.5ord.csv,0.8286,7,2584,3379,0.9016,0.8987,0.8515,0.8871,0.9259,0.9592,0.9397,0.7979,0.9021,0.7429
+./sensitivity_analysis/datasets/seismic-bumps/0.7t_0.1ord.csv,0.7524,2,2584,3379,0.9023,0.8994,0.8606,0.888,0.919,0.9524,0.9223,0.7997,0.9018,0.719
+./sensitivity_analysis/datasets/seismic-bumps/0.7t_0.3ord.csv,0.7714,6,2584,3379,0.9064,0.9105,0.8817,0.8981,0.9155,0.9595,0.9405,0.8191,0.9111,0.7476
+./sensitivity_analysis/datasets/seismic-bumps/0.7t_0.5ord.csv,0.8095,7,2584,3379,0.9016,0.9083,0.8728,0.8978,0.9276,0.9584,0.9385,0.8186,0.9107,0.781
+./sensitivity_analysis/datasets/seismic-bumps/0.8t_0.1ord.csv,0.8095,2,2584,3379,0.8972,0.8964,0.8493,0.885,0.9241,0.9555,0.9352,0.7938,0.8999,0.7571
+./sensitivity_analysis/datasets/seismic-bumps/0.8t_0.3ord.csv,0.8286,6,2584,3379,0.9005,0.9001,0.8914,0.8827,0.8741,0.9507,0.932,0.7959,0.8969,0.7762
+./sensitivity_analysis/datasets/seismic-bumps/0.8t_0.5ord.csv,0.8286,7,2584,3379,0.9042,0.9024,0.8842,0.8869,0.8897,0.9561,0.9367,0.8011,0.9008,0.7619
+./sensitivity_analysis/datasets/seismic-bumps/0.85t_0.1ord.csv,0.8667,3,2584,3379,0.9071,0.9046,0.8782,0.8896,0.9017,0.9573,0.9333,0.8062,0.9042,0.7762
+./sensitivity_analysis/datasets/seismic-bumps/0.85t_0.3ord.csv,0.8667,8,2584,3379,0.9053,0.9061,0.8536,0.8966,0.9448,0.9583,0.9412,0.8149,0.9109,0.7524
+./sensitivity_analysis/datasets/seismic-bumps/0.85t_0.5ord.csv,0.8667,7,2584,3379,0.9034,0.8942,0.849,0.8808,0.9155,0.9587,0.941,0.7882,0.8969,0.7762

@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/bank32nh/0.5t_0.1ord.csv,0.5806,5,6213,7908,0.8543,0.9523,0.9258,0.9455,0.9661,0.9895,0.9842,0.9038,0.954,0.4127
+./sensitivity_analysis/datasets/bank32nh/0.5t_0.15ord.csv,0.5565,5,6213,7908,0.8617,0.9592,0.9468,0.9527,0.9587,0.9907,0.9861,0.9169,0.9592,0.4762
+./sensitivity_analysis/datasets/bank32nh/0.5t_0.125ord.csv,0.5161,4,6213,7908,0.858,0.9583,0.9417,0.9519,0.9624,0.9886,0.9836,0.9153,0.9588,0.4127
+./sensitivity_analysis/datasets/bank32nh/0.6t_0.1ord.csv,0.6048,4,6213,7908,0.8683,0.9573,0.9578,0.9499,0.9425,0.9873,0.9807,0.9131,0.9555,0.4127
+./sensitivity_analysis/datasets/bank32nh/0.6t_0.15ord.csv,0.6331,5,6213,7908,0.8678,0.9599,0.9533,0.9532,0.9535,0.9884,0.9833,0.9183,0.9591,0.4762
+./sensitivity_analysis/datasets/bank32nh/0.6t_0.125ord.csv,0.6411,4,6213,7908,0.8498,0.9633,0.9523,0.9575,0.9631,0.9874,0.9809,0.9256,0.9633,0.4762
+./sensitivity_analysis/datasets/bank32nh/0.7t_0.1ord.csv,0.7016,4,6213,7908,0.9549,0.9893,0.9825,0.9875,0.9926,0.9932,0.981,0.9781,0.9897,0.4444
+./sensitivity_analysis/datasets/bank32nh/0.7t_0.15ord.csv,0.7984,5,6213,7908,0.9543,0.9874,0.9804,0.9854,0.9904,0.9938,0.9855,0.9743,0.9877,0.4921
+./sensitivity_analysis/datasets/bank32nh/0.7t_0.125ord.csv,0.7056,4,6213,7908,0.8671,0.9668,0.9701,0.9609,0.9521,0.9872,0.9831,0.9323,0.965,0.4444
+./sensitivity_analysis/datasets/bank32nh/0.75t_0.1ord.csv,0.7863,5,6213,7908,0.954,0.9877,0.9776,0.9858,0.9941,0.9943,0.985,0.975,0.9885,0.4921
+./sensitivity_analysis/datasets/bank32nh/0.75t_0.15ord.csv,0.7984,6,6213,7908,0.9554,0.9889,0.9812,0.9872,0.9934,0.9946,0.9856,0.9776,0.9895,0.4921
+./sensitivity_analysis/datasets/bank32nh/0.75t_0.125ord.csv,0.7702,5,6213,7908,0.9537,0.9855,0.9777,0.9832,0.9889,0.9921,0.9806,0.9705,0.9859,0.5079

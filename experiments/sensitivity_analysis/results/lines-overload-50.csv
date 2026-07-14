@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/lines-overload-50/0.6t_0.01ord.csv,0.8359,2,4368,5663,0.9894,0.9978,0.9949,0.9974,1,0.9995,0.9992,0.9955,0.9981,0.6247
+./sensitivity_analysis/datasets/lines-overload-50/0.6t_0.02ord.csv,0.8393,4,4368,5663,0.989,0.9974,0.9939,0.9969,1,0.9996,0.9994,0.9946,0.9977,0.6398
+./sensitivity_analysis/datasets/lines-overload-50/0.6t_0.03ord.csv,0.8527,6,4368,5663,0.9892,0.9969,0.9929,0.9964,1,0.9993,0.999,0.9937,0.9973,0.6446
+./sensitivity_analysis/datasets/lines-overload-50/0.7t_0.01ord.csv,0.8363,2,4368,5663,0.9894,0.9974,0.9939,0.9969,1,0.9995,0.9992,0.9946,0.9977,0.6299
+./sensitivity_analysis/datasets/lines-overload-50/0.7t_0.02ord.csv,0.8493,4,4368,5663,0.9885,0.9978,0.9949,0.9974,1,0.9996,0.9993,0.9955,0.9981,0.6455
+./sensitivity_analysis/datasets/lines-overload-50/0.7t_0.03ord.csv,0.8469,6,4368,5663,0.989,0.9978,0.9959,0.9974,0.999,0.9995,0.9993,0.9955,0.9979,0.6463
+./sensitivity_analysis/datasets/lines-overload-50/0.8t_0.01ord.csv,0.8331,2,4368,5663,0.9892,0.9974,0.9939,0.9969,1,0.9994,0.9991,0.9946,0.9977,0.6329
+./sensitivity_analysis/datasets/lines-overload-50/0.8t_0.02ord.csv,0.842,4,4368,5663,0.9885,0.9974,0.9939,0.9969,1,0.9995,0.9992,0.9946,0.9977,0.6416
+./sensitivity_analysis/datasets/lines-overload-50/0.8t_0.03ord.csv,0.8476,6,4368,5663,0.989,0.9974,0.9939,0.9969,1,0.9992,0.9987,0.9946,0.9977,0.6472
+./sensitivity_analysis/datasets/lines-overload-50/0.85t_0.01ord.csv,0.8516,4,4368,5663,0.9887,0.9978,0.9949,0.9974,1,0.9995,0.9992,0.9955,0.9981,0.6346
+./sensitivity_analysis/datasets/lines-overload-50/0.85t_0.02ord.csv,0.8517,4,4368,5663,0.9879,0.9978,0.9949,0.9974,1,0.9994,0.9991,0.9955,0.9981,0.6416
+./sensitivity_analysis/datasets/lines-overload-50/0.85t_0.03ord.csv,0.8565,6,4368,5663,0.9892,0.9978,0.9949,0.9974,1,0.9995,0.9992,0.9955,0.9981,0.6459

@@ -1,0 +1,13 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc,topk_features_overlap
+./sensitivity_analysis/datasets/pen-digits/0.6t_0.1ord.csv,0.8667,2,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6349
+./sensitivity_analysis/datasets/pen-digits/0.6t_0.3ord.csv,0.95,6,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6243
+./sensitivity_analysis/datasets/pen-digits/0.6t_0.5ord.csv,0.9333,8,10992,13910,0.9991,1,1,1,1,1,1,1,1,0.6455
+./sensitivity_analysis/datasets/pen-digits/0.7t_0.1ord.csv,0.8833,2,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6455
+./sensitivity_analysis/datasets/pen-digits/0.7t_0.3ord.csv,0.9333,8,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6561
+./sensitivity_analysis/datasets/pen-digits/0.7t_0.5ord.csv,0.9333,11,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6508
+./sensitivity_analysis/datasets/pen-digits/0.8t_0.1ord.csv,0.8833,2,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6455
+./sensitivity_analysis/datasets/pen-digits/0.8t_0.3ord.csv,0.9167,8,10992,13910,0.9994,1,1,1,1,1,1,1,1,0.6402
+./sensitivity_analysis/datasets/pen-digits/0.8t_0.5ord.csv,0.9333,8,10992,13910,0.9992,1,1,1,1,1,1,1,1,0.6667
+./sensitivity_analysis/datasets/pen-digits/0.85t_0.1ord.csv,0.8667,2,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6349
+./sensitivity_analysis/datasets/pen-digits/0.85t_0.3ord.csv,0.9333,11,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6561
+./sensitivity_analysis/datasets/pen-digits/0.85t_0.5ord.csv,0.9333,11,10992,13910,0.9993,1,1,1,1,1,1,1,1,0.6508
