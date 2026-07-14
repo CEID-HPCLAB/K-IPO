@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/airlines/datasets/CTGAN/1.csv,0.7143,1,16427,20907,0.6762,0.7962,0.7623,0.7636,0.7651,0.8567,0.8483,0.5845,0.7923
+./selection/airlines/datasets/CTGAN/2.csv,0.7143,2,16427,20907,0.711,0.8033,0.7691,0.7725,0.7762,0.868,0.8543,0.5995,0.7999
+./selection/airlines/datasets/CTGAN/3.csv,0.7143,3,16427,20907,0.7005,0.7946,0.7626,0.7612,0.7603,0.8614,0.8546,0.5814,0.7903
+./selection/airlines/datasets/CTGAN/4.csv,0.7143,2,16427,20907,0.6979,0.7939,0.7581,0.762,0.7665,0.8603,0.8479,0.5806,0.7904
+./selection/airlines/datasets/CTGAN/5.csv,0.7143,2,16427,20907,0.6848,0.7759,0.7451,0.7375,0.7305,0.8388,0.823,0.5424,0.7703
+./selection/airlines/datasets/CTGAN/6.csv,0.7143,2,16427,20907,0.6938,0.7801,0.7234,0.7593,0.8008,0.8516,0.8245,0.5617,0.7827
+./selection/airlines/datasets/CTGAN/7.csv,0.7143,1,16427,20907,0.6933,0.7981,0.7683,0.7629,0.7575,0.8598,0.8498,0.5871,0.793
+./selection/airlines/datasets/CTGAN/8.csv,0.7143,2,16427,20907,0.6752,0.7751,0.7387,0.7415,0.7453,0.8373,0.8157,0.5431,0.7714
+./selection/airlines/datasets/CTGAN/9.csv,0.7143,2,16427,20907,0.6685,0.7781,0.7371,0.7443,0.7517,0.8401,0.8278,0.5485,0.7748
+./selection/airlines/datasets/CTGAN/10.csv,0.7143,2,16427,20907,0.6894,0.7847,0.7408,0.7527,0.7651,0.8477,0.8343,0.5623,0.7822

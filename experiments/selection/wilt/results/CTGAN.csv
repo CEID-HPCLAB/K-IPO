@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/wilt/datasets/CTGAN/1.csv,0.8,2,4839,6408,0.9198,0.9548,0.9501,0.9471,0.9444,0.9901,0.9892,0.9079,0.9535
+./selection/wilt/datasets/CTGAN/2.csv,0.8,0,4839,6408,0.8617,0.9392,0.9364,0.9286,0.9217,0.9767,0.9768,0.8762,0.937
+./selection/wilt/datasets/CTGAN/3.csv,0.8,3,4839,6408,0.875,0.9431,0.9484,0.9324,0.9171,0.9831,0.9817,0.8837,0.9398
+./selection/wilt/datasets/CTGAN/4.csv,1.0,5,4839,6408,0.8937,0.952,0.9578,0.9431,0.929,0.9851,0.9839,0.902,0.9491
+./selection/wilt/datasets/CTGAN/5.csv,0.8,2,4839,6408,0.8652,0.9341,0.9281,0.9226,0.9171,0.978,0.9761,0.8653,0.932
+./selection/wilt/datasets/CTGAN/6.csv,0.8,3,4839,6408,0.8794,0.9356,0.9051,0.9268,0.9499,0.9824,0.9795,0.8705,0.9374
+./selection/wilt/datasets/CTGAN/7.csv,0.8,0,4839,6408,0.9302,0.9707,0.9672,0.9658,0.9645,0.993,0.9929,0.9403,0.97
+./selection/wilt/datasets/CTGAN/8.csv,1.0,5,4839,6408,0.8956,0.9489,0.9393,0.9405,0.9417,0.9856,0.9843,0.8958,0.948
+./selection/wilt/datasets/CTGAN/9.csv,0.8,3,4839,6408,0.8664,0.9395,0.9299,0.9294,0.929,0.9805,0.9785,0.8766,0.9382
+./selection/wilt/datasets/CTGAN/10.csv,0.8,1,4839,6408,0.8599,0.9325,0.9228,0.9212,0.9199,0.9788,0.9765,0.8624,0.9309

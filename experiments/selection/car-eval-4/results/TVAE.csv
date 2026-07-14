@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/car-eval-4/datasets/TVAE/1.csv,1.0,6,1728,2327,0.985,0.9989,0.9975,0.9988,1.0,1.0,1.0,0.9978,0.9991
+./selection/car-eval-4/datasets/TVAE/2.csv,0.8667,3,1728,2327,0.9833,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+./selection/car-eval-4/datasets/TVAE/3.csv,0.8667,3,1728,2327,0.9876,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+./selection/car-eval-4/datasets/TVAE/4.csv,0.8667,3,1728,2327,0.985,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+./selection/car-eval-4/datasets/TVAE/5.csv,0.8667,3,1728,2327,0.9855,0.9989,0.9975,0.9988,1.0,1.0,1.0,0.9978,0.9991
+./selection/car-eval-4/datasets/TVAE/6.csv,0.8667,3,1728,2327,0.9823,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+./selection/car-eval-4/datasets/TVAE/7.csv,0.8667,3,1728,2327,0.9823,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+./selection/car-eval-4/datasets/TVAE/8.csv,0.8667,3,1728,2327,0.9833,0.9979,1.0,0.9975,0.995,0.9999,0.9999,0.9956,0.9975
+./selection/car-eval-4/datasets/TVAE/9.csv,0.8667,3,1728,2327,0.9844,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+./selection/car-eval-4/datasets/TVAE/10.csv,0.8667,3,1728,2327,0.9833,0.9989,0.9975,0.9988,1.0,1.0,1.0,0.9978,0.9991

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/bank-marketing/datasets/CTGAN/1.csv,0.7,1,4521,5598,0.7981,0.9103,0.9032,0.8949,0.8875,0.9678,0.9661,0.8173,0.9074
+./selection/bank-marketing/datasets/CTGAN/2.csv,0.7,1,4521,5598,0.7979,0.9232,0.9437,0.9069,0.8729,0.9703,0.9696,0.8436,0.9169
+./selection/bank-marketing/datasets/CTGAN/3.csv,0.7167,0,4521,5598,0.7745,0.9143,0.9318,0.897,0.8656,0.9677,0.9651,0.8261,0.9082
+./selection/bank-marketing/datasets/CTGAN/4.csv,0.7167,1,4521,5598,0.7923,0.9156,0.9114,0.9003,0.8896,0.9688,0.9674,0.8274,0.9124
+./selection/bank-marketing/datasets/CTGAN/5.csv,0.7,0,4521,5598,0.7921,0.9187,0.9387,0.9017,0.8677,0.9697,0.9686,0.8347,0.9124
+./selection/bank-marketing/datasets/CTGAN/6.csv,0.7167,1,4521,5598,0.8021,0.9116,0.9152,0.8955,0.8781,0.9676,0.9644,0.8206,0.9074
+./selection/bank-marketing/datasets/CTGAN/7.csv,0.7,1,4521,5598,0.8102,0.9179,0.9413,0.9004,0.8635,0.9682,0.9666,0.8334,0.9111
+./selection/bank-marketing/datasets/CTGAN/8.csv,0.7,1,4521,5598,0.795,0.9205,0.9297,0.9048,0.8813,0.9706,0.9695,0.8376,0.9156
+./selection/bank-marketing/datasets/CTGAN/9.csv,0.7167,1,4521,5598,0.8048,0.9179,0.9145,0.903,0.8917,0.9714,0.9695,0.832,0.9146
+./selection/bank-marketing/datasets/CTGAN/10.csv,0.7167,1,4521,5598,0.7983,0.9174,0.9129,0.9026,0.8927,0.9692,0.9678,0.8312,0.9143

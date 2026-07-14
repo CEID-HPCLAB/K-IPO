@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1-N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/nhanes/datasets/TabDDPM/1.csv,0.9048,1,2105,2679,0.63,0.7295,0.6825,0.6867,0.6957,0.7926,0.7692,0.4515,0.7253
+./selection/nhanes/datasets/TabDDPM/2.csv,0.7143,2,2105,2679,0.6496,0.7519,0.7109,0.7109,0.7109,0.8152,0.8024,0.4936,0.7468
+./selection/nhanes/datasets/TabDDPM/3.csv,0.7143,1,2105,2679,0.6374,0.7248,0.6744,0.6838,0.6935,0.7857,0.7482,0.4404,0.7209
+./selection/nhanes/datasets/TabDDPM/4.csv,0.7143,0,2105,2679,0.6281,0.7313,0.6781,0.6961,0.7196,0.7922,0.7746,0.4591,0.7299
+./selection/nhanes/datasets/TabDDPM/5.csv,0.7143,1,2105,2679,0.6472,0.764,0.7393,0.7167,0.6957,0.8222,0.8161,0.5156,0.7555
+./selection/nhanes/datasets/TabDDPM/6.csv,0.8095,1,2105,2679,0.6374,0.7118,0.6706,0.6586,0.65,0.7563,0.7325,0.4111,0.7041
+./selection/nhanes/datasets/TabDDPM/7.csv,0.8095,1,2105,2679,0.6197,0.708,0.6625,0.6596,0.6587,0.756,0.717,0.4051,0.7019
+./selection/nhanes/datasets/TabDDPM/8.csv,0.8095,1,2105,2679,0.6048,0.709,0.6386,0.6861,0.7413,0.7833,0.7573,0.4216,0.713
+./selection/nhanes/datasets/TabDDPM/9.csv,0.7143,1,2105,2679,0.6253,0.7043,0.6438,0.6687,0.6957,0.7579,0.7177,0.4034,0.7032
+./selection/nhanes/datasets/TabDDPM/10.csv,0.8095,1,2105,2679,0.6318,0.7453,0.7184,0.6943,0.6739,0.7968,0.783,0.4784,0.7365

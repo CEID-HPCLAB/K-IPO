@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/abalone/datasets/TVAE/1.csv,0.7857,2,4177,5299,0.8636,0.9085,0.8923,0.8933,0.8943,0.9707,0.9634,0.8132,0.9067
+./selection/abalone/datasets/TVAE/2.csv,0.7143,2,4177,5299,0.8672,0.9132,0.9221,0.8961,0.8744,0.9727,0.9659,0.8245,0.9083
+./selection/abalone/datasets/TVAE/3.csv,0.7143,2,4177,5299,0.8554,0.9085,0.9073,0.8915,0.8778,0.9719,0.9654,0.8138,0.9046
+./selection/abalone/datasets/TVAE/4.csv,0.7143,2,4177,5299,0.8606,0.8991,0.8728,0.8838,0.8954,0.9675,0.9604,0.7951,0.8986
+./selection/abalone/datasets/TVAE/5.csv,0.7143,2,4177,5299,0.8622,0.9066,0.8864,0.8917,0.8976,0.9711,0.9655,0.81,0.9055
+./selection/abalone/datasets/TVAE/6.csv,0.7143,1,4177,5299,0.854,0.9184,0.9052,0.9047,0.9042,0.9734,0.9675,0.8334,0.9166
+./selection/abalone/datasets/TVAE/7.csv,0.7143,2,4177,5299,0.8601,0.8948,0.8607,0.8804,0.9031,0.9667,0.9591,0.7889,0.8958
+./selection/abalone/datasets/TVAE/8.csv,0.7143,1,4177,5299,0.8622,0.9127,0.9098,0.8968,0.8844,0.9723,0.9642,0.8216,0.9092
+./selection/abalone/datasets/TVAE/9.csv,0.7143,2,4177,5299,0.8537,0.9033,0.8818,0.888,0.8954,0.9715,0.9643,0.8038,0.9023
+./selection/abalone/datasets/TVAE/10.csv,0.7143,2,4177,5299,0.8502,0.9099,0.8914,0.8954,0.8998,0.9717,0.9642,0.8165,0.9086

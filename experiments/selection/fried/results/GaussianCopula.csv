@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/fried/datasets/GaussianCopula/1.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/2.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/3.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/4.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/5.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/6.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/7.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/8.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/9.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676
+./selection/fried/datasets/GaussianCopula/10.csv,0.7333,4,22469,28596,0.7727,0.8754,0.8876,0.8484,0.8129,0.9289,0.9333,0.7454,0.8676

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc             
+./selection/lines-overload-50/datasets/SMOTEWB/1.csv,0.8325,1,4368,5663,0.9892,0.9974,0.9939,0.9969,1.0,0.9993,0.999,0.9946,0.9977
+./selection/lines-overload-50/datasets/SMOTEWB/2.csv,0.8295,1,4368,5663,0.9894,0.9974,0.9939,0.9969,1.0,0.9994,0.999,0.9946,0.9977
+./selection/lines-overload-50/datasets/SMOTEWB/3.csv,0.8343,1,4368,5663,0.9892,0.9978,0.9949,0.9974,1.0,0.9994,0.9991,0.9955,0.9981
+./selection/lines-overload-50/datasets/SMOTEWB/4.csv,0.8342,1,4368,5663,0.989,0.9974,0.9939,0.9969,1.0,0.9993,0.9989,0.9946,0.9977
+./selection/lines-overload-50/datasets/SMOTEWB/5.csv,0.8343,1,4368,5663,0.989,0.9978,0.9949,0.9974,1.0,0.9994,0.9991,0.9955,0.9981
+./selection/lines-overload-50/datasets/SMOTEWB/6.csv,0.8316,1,4368,5663,0.9894,0.9978,0.9949,0.9974,1.0,0.9994,0.9991,0.9955,0.9981
+./selection/lines-overload-50/datasets/SMOTEWB/7.csv,0.8321,1,4368,5663,0.989,0.9974,0.9939,0.9969,1.0,0.9994,0.999,0.9946,0.9977
+./selection/lines-overload-50/datasets/SMOTEWB/8.csv,0.8335,1,4368,5663,0.9894,0.9978,0.9949,0.9974,1.0,0.9994,0.9991,0.9955,0.9981
+./selection/lines-overload-50/datasets/SMOTEWB/9.csv,0.8332,1,4368,5663,0.9887,0.9978,0.9949,0.9974,1.0,0.9994,0.9991,0.9955,0.9981
+./selection/lines-overload-50/datasets/SMOTEWB/10.csv,0.8314,1,4368,5663,0.9892,0.9974,0.9939,0.9969,1.0,0.9994,0.999,0.9946,0.9977

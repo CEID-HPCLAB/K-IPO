@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/churn/datasets/GaussianCopula/1.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/2.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/3.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/4.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/5.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/6.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/7.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/8.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/9.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874
+./selection/churn/datasets/GaussianCopula/10.csv,0.7895,1,4722,6009,0.7081,0.8927,0.891,0.8695,0.8505,0.9386,0.939,0.7801,0.8874

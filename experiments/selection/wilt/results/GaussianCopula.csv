@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/wilt/datasets/GaussianCopula/1.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/2.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/3.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/4.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/5.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/6.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/7.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/8.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/9.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648
+./selection/wilt/datasets/GaussianCopula/10.csv,1.0,5,4839,6408,0.9187,0.9649,0.9543,0.9592,0.9645,0.9926,0.9907,0.9287,0.9648

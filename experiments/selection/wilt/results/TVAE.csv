@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/wilt/datasets/TVAE/1.csv,1.0,5,4839,6408,0.8857,0.9364,0.9293,0.9255,0.9217,0.9819,0.9786,0.8701,0.9346
+./selection/wilt/datasets/TVAE/2.csv,1.0,5,4839,6408,0.8837,0.9368,0.9255,0.9263,0.9271,0.9818,0.9784,0.8711,0.9356
+./selection/wilt/datasets/TVAE/3.csv,1.0,5,4839,6408,0.8874,0.9454,0.9412,0.9359,0.9308,0.9829,0.9805,0.8885,0.9436
+./selection/wilt/datasets/TVAE/4.csv,1.0,5,4839,6408,0.8829,0.9353,0.9331,0.9236,0.9144,0.9797,0.9775,0.8676,0.9326
+./selection/wilt/datasets/TVAE/5.csv,1.0,5,4839,6408,0.8796,0.9341,0.9346,0.922,0.9098,0.9777,0.9749,0.8652,0.931
+./selection/wilt/datasets/TVAE/6.csv,1.0,5,4839,6408,0.8851,0.9431,0.9313,0.9336,0.9362,0.9854,0.9824,0.884,0.9422
+./selection/wilt/datasets/TVAE/7.csv,1.0,5,4839,6408,0.8915,0.9493,0.9592,0.9396,0.9208,0.9861,0.9835,0.8965,0.9457
+./selection/wilt/datasets/TVAE/8.csv,1.0,5,4839,6408,0.88,0.9512,0.9444,0.943,0.9417,0.9877,0.9858,0.9005,0.9501
+./selection/wilt/datasets/TVAE/9.csv,1.0,5,4839,6408,0.8826,0.9395,0.942,0.9284,0.9153,0.9819,0.9789,0.8764,0.9365
+./selection/wilt/datasets/TVAE/10.csv,0.8,0,4839,6408,0.8904,0.9384,0.9445,0.9268,0.9098,0.9796,0.9767,0.8742,0.9348

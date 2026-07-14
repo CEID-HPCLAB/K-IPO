@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/nhanes/datasets/CTGAN/1.csv,0.7143,0,2105,2679,0.8259,0.8983,0.9007,0.8812,0.8652,0.9445,0.9454,0.7947,0.8942
+./selection/nhanes/datasets/CTGAN/2.csv,0.8095,2,2105,2679,0.7942,0.8909,0.9248,0.8652,0.813,0.9186,0.9187,0.7787,0.8812
+./selection/nhanes/datasets/CTGAN/3.csv,0.8095,1,2105,2679,0.825,0.9123,0.9512,0.8916,0.8391,0.94,0.9462,0.823,0.9032
+./selection/nhanes/datasets/CTGAN/4.csv,0.7143,2,2105,2679,0.8189,0.9086,0.9406,0.8881,0.8413,0.9352,0.9415,0.8149,0.9002
+./selection/nhanes/datasets/CTGAN/5.csv,0.7143,1,2105,2679,0.8143,0.9067,0.9343,0.8864,0.8435,0.9396,0.9444,0.8108,0.8989
+./selection/nhanes/datasets/CTGAN/6.csv,0.8095,1,2105,2679,0.8096,0.903,0.9185,0.885,0.8565,0.9331,0.9337,0.8044,0.8972
+./selection/nhanes/datasets/CTGAN/7.csv,0.7143,1,2105,2679,0.7979,0.9067,0.9181,0.8903,0.8674,0.936,0.9408,0.8124,0.9018
+./selection/nhanes/datasets/CTGAN/8.csv,0.7143,3,2105,2679,0.8021,0.9011,0.9163,0.8829,0.8543,0.9344,0.9397,0.8006,0.8953
+./selection/nhanes/datasets/CTGAN/9.csv,0.8095,1,2105,2679,0.8082,0.8965,0.9075,0.8771,0.85,0.9336,0.9355,0.7899,0.8907
+./selection/nhanes/datasets/CTGAN/10.csv,0.8095,1,2105,2679,0.8147,0.8909,0.9227,0.8656,0.8152,0.9221,0.9233,0.7785,0.8815

@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/abalone/datasets/GaussianCopula/1.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/2.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/3.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/4.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/5.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/6.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/7.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/8.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/9.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436
+./selection/abalone/datasets/GaussianCopula/10.csv,0.8571,2,4177,5299,0.7301,0.8377,0.7711,0.8238,0.8844,0.914,0.8617,0.6803,0.8436

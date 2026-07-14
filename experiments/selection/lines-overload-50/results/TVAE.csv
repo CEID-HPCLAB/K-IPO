@@ -1,0 +1,11 @@
+data_path,kendall_tau,topk_ordering,total_samples_before,total_samples_after,separability(1 - N3),Accuracy,Precision,F1,Recall,ROC_AUC,PR_AUC,MCC,BalancedAcc
+./selection/lines-overload-50/datasets/TVAE/1.csv,0.7675,0,4368,5663,0.987,0.996,0.9929,0.9954,0.9979,0.9997,0.9996,0.9919,0.9963
+./selection/lines-overload-50/datasets/TVAE/2.csv,0.7994,0,4368,5663,0.987,0.9974,0.9959,0.9969,0.9979,0.9999,0.9998,0.9946,0.9974
+./selection/lines-overload-50/datasets/TVAE/3.csv,0.7493,0,4368,5663,0.9872,0.9965,0.9939,0.9959,0.9979,0.9998,0.9998,0.9928,0.9967
+./selection/lines-overload-50/datasets/TVAE/4.csv,0.7956,3,4368,5663,0.9863,0.9974,0.9959,0.9969,0.9979,0.9999,0.9999,0.9946,0.9974
+./selection/lines-overload-50/datasets/TVAE/5.csv,0.7341,0,4368,5663,0.987,0.9969,0.9949,0.9964,0.9979,0.9999,0.9998,0.9937,0.997
+./selection/lines-overload-50/datasets/TVAE/6.csv,0.7817,0,4368,5663,0.9872,0.9974,0.9959,0.9969,0.9979,0.9999,0.9998,0.9946,0.9974
+./selection/lines-overload-50/datasets/TVAE/7.csv,0.7352,0,4368,5663,0.9868,0.9951,0.9919,0.9944,0.9969,0.9997,0.9996,0.9901,0.9954
+./selection/lines-overload-50/datasets/TVAE/8.csv,0.777,0,4368,5663,0.987,0.9965,0.9939,0.9959,0.9979,0.9999,0.9998,0.9928,0.9967
+./selection/lines-overload-50/datasets/TVAE/9.csv,0.7755,0,4368,5663,0.9863,0.9974,0.9969,0.9969,0.9969,0.9999,0.9999,0.9946,0.9973
+./selection/lines-overload-50/datasets/TVAE/10.csv,0.7722,0,4368,5663,0.9865,0.9969,0.9939,0.9964,0.999,0.9999,0.9999,0.9937,0.9972
