@@ -1,4 +1,3 @@
-*.sh
 *.rs
 reqs*.txt
 hmean.py
@@ -7,3 +6,4 @@ format_topk*.py
 *.zip
 merge.py
 depr/*
+*check*.py
