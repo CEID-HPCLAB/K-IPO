@@ -10,7 +10,7 @@ build-backend = "setuptools.build_meta"
 name = "kipo"
 version = "0.1.0"
 
-description = "Kendall-constrained Importance-Preserving Oversampling for imbalanced tabular classification"
+description = "Kendall-constrained Importance-Preserving Oversampling (K-IPO) for imbalanced tabular classification"
 
 readme = "README.md"
 
