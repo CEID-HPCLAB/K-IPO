@@ -195,6 +195,7 @@ def compute_hmean(data):
 
     return data
 
+
 def aggregate_results(root_dir):
     dirs = [p for p in root_dir.iterdir() if p.is_dir() and p.name != "results"]; dirs = sorted(dirs, key = lambda x: x.name.lower())
     
