@@ -1,6 +1,8 @@
 import logging; import warnings
 import os; import yaml; import pandas as pd; import numpy as np
 
+import argparse
+
 from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import mutual_info_classif
 
@@ -52,14 +54,22 @@ def main():
     plural = "" if n_workers == 1 else "s"
     console.print(f"[magenta][INFO] running with {n_workers} torcpy worker{plural}.[/magenta]")
 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", type = str, default = None, help = "(Raw) Dataset path")
+    parser.add_argument("--eval_dataset", type = str, default = None, help = "Evaluation Dataset path")
+    parser.add_argument("--xai", type = bool, action = argparse.BooleanOptionalAction, help = "Specify whether to perform explainability evaluation on the given dataset")
+
+    args = parser.parse_args()
+
     def load_config():
         with open(os.path.join(os.path.dirname(__file__), "config.yml")) as f:
             return yaml.safe_load(f)
 
     run_config = load_config()
 
-    DATASET = run_config["dataset"]
-    EVAL_DATASET = run_config["eval_dataset"]
+    DATASET = args.dataset if args.dataset is not None else run_config["dataset"]
+    EVAL_DATASET = (args.eval_dataset if args.eval_dataset is not None else run_config["eval_dataset"])
+    XAI_EVAL = args.xai
     TRAIN_TEST_RATIO = run_config["train_test_ratio"]
     SEED_GEN = run_config["seed"]
     MODELS = run_config["models"]
@@ -128,8 +138,9 @@ def main():
     print(f"[INFO] information gain: {information_gain:.4f}")
     print(f"[INFO] seperability (1 - N3): {seperability:.4f}")
 
-    importance_overlap_perc = compute_importance_overlap(final_importance, DATASET, topk = num_topk_features) 
-    console.print(f"[dark_orange][INFO] feature importance ranking (overlap) ->[/dark_orange] "f"[white]{importance_overlap_perc:.3f} %[/white]")
+    if XAI_EVAL:
+        importance_overlap_perc = compute_importance_overlap(final_importance, DATASET, topk = num_topk_features) 
+        console.print(f"[dark_orange][INFO] feature importance ranking (overlap) ->[/dark_orange] "f"[white]{importance_overlap_perc:.3f} %[/white]")
 
     aug_imp = compute_importance(mode = "f-score_ANOVA", X_train = X_aug, y_train = y_aug.values.ravel())  
     kendall_t = kendall_tau(raw_imp, aug_imp); topk_ordering = compute_topk_ordering(raw_imp, aug_imp)
