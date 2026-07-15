@@ -1,5 +1,5 @@
 # ⚖️ K-IPO: Kendall-constrained Importance Preserving Oversampling for Imbalanced Tabular Data
-[![GitHub release](https://img.shields.io/github/v/release/CEID-HPCLAB/Mneme?include_prereleases&color=%238FD9FB)](https://github.com/CEID-HPCLAB/Mneme/releases)
+[![GitHub release](https://img.shields.io/github/v/release/CEID-HPCLAB/K-IPO?color=%238FD9FB)](https://github.com/CEID-HPCLAB/K-IPO/releases)
 [![License](https://img.shields.io/badge/License-Apache--2.0-FFDEAD)](https://www.apache.org/licenses/LICENSE-2.0)  <br>
 
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-purple?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3100/) 
