@@ -12,11 +12,11 @@
 ## Table of Contents
 - [Prerequisites & Installation](#prerequisites--installation)
 - [Usage](#usage)
-    - [API](#api)
+    - [Demo Example (API)](#demo-example-api)
     - [End-to-End Pipeline for AI4I2020](#end-to-end-pipeline-for-ai4i2020)
 - [Datasets](#datasets)
-- [Performance Evaluation](#performance-evaluation)
 - [File Structure](#file-structure)
+- [Performance Evaluation](#performance-evaluation)
 - [Acknowledgments](#acknowledgments)
 
 ## Prerequisites & Installation
@@ -51,21 +51,25 @@ chmod +x ./setup.sh
 
 ## Usage
 
-### API
+### Demo Example (API)
 
 The code listing below illustrates a representative example of how K-IPO can be applied to oversample an imbalanced tabular binary classification dataset. `TAU_THRESHOLD`, `TOPK_OVERLAP`, `TOPK_ORDERING`, and `BALANCE_RATIO` are configuration parameters that control the oversampling process. Their values are specified in a [YAML configuration file](https://github.com/CEID-HPCLAB/K-IPO/blob/main/config.yml), which, among other settings, defines the underlying generator used by K-IPO to generate new samples and the dataset on which the oversampling process is performed.
 
 ```python
 from kipo.selector import KIPOSelector as KIPO
 
-kipo = KIPO(num_features, tau_threshold = TAU_THRESHOLD, topk_ordering = TOPK_ORDERING, topk_overlap = TOPK_OVERLAP)
+kipo = KIPO(num_features, tau_threshold = TAU_THRESHOLD, topk_ordering = TOPK_ORDERING, 
+           topk_overlap = TOPK_OVERLAP)
 
-kipo_X_aug, kipo_y_aug, info = kipo.select(X_train, y_train, X_test, y_test, ratio = BALANCE_RATIO,
-                                           generator = gen_conf["method"], preprocessing = pipeline, **gen_conf["params"])
+kipo_X_aug, kipo_y_aug, info = kipo.select(X_train, y_train, X_test, y_test, 
+                                           ratio = BALANCE_RATIO, 
+                                           generator = gen_conf["method"], 
+                                           preprocessing = pipeline, 
+                                           **gen_conf["params"])
 
 ```
 
-> [!ΝΟΤΕ] 
+> [!NOTE]
 > For a complete example demonstrating the K-IPO synthetic data generation workflow, we refer the reader to the [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) script.
 
 ### End-to-End Pipeline for AI4I2020
@@ -76,15 +80,51 @@ The [`demo.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) no
 
 To download and install the datasets used in the manuscript, along with the corresponding `YAML` configuration files, run the following commands:
 ```bash
-chmod +x ./datasets/download.sh # assumes you are in the repo root directory
+chmod +x ./datasets/download.sh
 ./datasets/download.sh 
 ```
 
-> [!ΝΟΤΕ] 
-> The [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset and its `YAML` configuration file are bundled with the repository under the [`datasets/`](#https://github.com/CEID-HPCLAB/K-IPO/tree/main/datasets) folder and can be used directly for the K-IPO API demonstration and [end-to-end performance evaluation workflow](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) without any additional setup.
+> [!NOTE]
+> The [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset and its `YAML` configuration file are bundled with the repository under the [`datasets/`](#https://github.com/CEID-HPCLAB/K-IPO/tree/main/datasets) folder and can be used directly for the K-IPO [API demonstration](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) and [end-to-end performance evaluation workflow](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) without any additional setup.
+
+
+## File Structure
+
+## Performance Evaluation
+
+The experimental evaluation presented in the manuscript consists of **three** stages: (a) selecting the most **suitable candidate data generator** to be used as the basis for K-IPO synthetic sample generation, (b) performing a **sensitivity analysis** across the 20 evaluated datasets to determine the optimal K-IPO configuration parameters, namely the Kendall's tau ($\tau$) threshold and the top-$k$ ordering constraint, for each dataset, and (c) evaluating K-IPO against existing data generation and oversampling approaches in terms of **feature importance preservation**, **explanation consistency**, **class separability**, and **predictive performance**.
+
+The results from all three evaluation stages can be reproduced using the [`eval.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/eval.sh) script located in the experiments folder ([`experiments/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments)), as follows:
+```bash
+chmod +x ./experiments/eval.sh
+
+# Run the base generator selection stage
+./experiments/eval.sh A
+
+# Run the K-IPO sensitivity analysis stage
+./experiments/eval.sh B
+
+# Run the K-IPO performance evaluation stage
+./experiments/eval.sh C 
+```
+
+> [!WARNING] 
+> The execution of the above commands requires all 20 raw datasets to be available locally. Therefore, the datasets must be downloaded beforehand using the commands provided in the [Datasets](#datasets) section.
+
+
+Using the [`heatmap.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/heatmap.py)script located in the [`experiments/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments)folder, you can generate the heatmaps presented in **Figure 3** of the manuscript. To generate the heatmaps, run:
+```bash
+python ./experiments/heatmap.py 
+```
+
+The [`evaluation.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/evaluation.ipynb) notebook can be used to generate **Tables 5, 6**, and **9** (Friedman test results) and **Figure 5** (critical diagrams) reported in the manuscript.
+
+> [!NOTE]
+> The [`f-score_anova.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/f-score_anova.py) and [`perftime_analysis.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/perftime_analysis.py) scripts can be used to generate the figures 2 and 4 of the manuscript, respectively. 
 
 
 ## Acknowledgments
+
 This research was funded by the "ARCHIMEDES Unit: Research in Artificial Intelligence, Data Science, and Algorithms" (MIS 5154714) under Greece's National Recovery and Resilience Plan, funded by the European Union – NextGenerationEU.
 
 
