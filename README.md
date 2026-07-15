@@ -15,6 +15,7 @@
     - [Demo Example (API)](#demo-example-api)
     - [End-to-End Pipeline for AI4I2020](#end-to-end-pipeline-for-ai4i2020)
 - [Datasets](#datasets)
+    - [YAML Configuration Files](#yaml-configuration-files)
 - [File Structure](#file-structure)
 - [Performance Evaluation](#performance-evaluation)
 - [Acknowledgments](#acknowledgments)
@@ -84,6 +85,35 @@ chmod +x ./datasets/download.sh
 ./datasets/download.sh 
 ```
 
+### YAML Configuration Files
+
+Each dataset is paired with a corresponding `YAML` configuration file that provides K-IPO with the required information to perform the data augmentation process. A representative `YAML` configuration file is structured as follows:
+
+```yaml
+# Columns to be dropped before augmentation
+drop_cols:
+  - column 1
+  - column 2
+
+# Target variable configuration
+target_col:
+  name: name of the target variable
+  encoding: True # Set to True if the target variable is already label encoded, False otherwise
+
+# Names of numerical columns
+num_cols:
+  - column 1
+  - column 2
+
+# Names and optional ordering of categorical columns
+cat_cols:
+  - column 1:
+      order: # Specify an order if a hierarchical pattern exists
+
+# CSV separator (default: ',')
+sep: ;
+```
+
 > [!NOTE]
 > The [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset and its `YAML` configuration file are bundled with the repository under the [`datasets/`](#https://github.com/CEID-HPCLAB/K-IPO/tree/main/datasets) folder and can be used directly for the K-IPO [API demonstration](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) and [end-to-end performance evaluation workflow](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) without any additional setup.
 
@@ -117,10 +147,10 @@ Using the [`heatmap.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experime
 python ./experiments/heatmap.py 
 ```
 
-The [`evaluation.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/evaluation.ipynb) notebook can be used to generate **Tables 5, 6**, and **9** (Friedman test results) and **Figure 5** (critical diagrams) reported in the manuscript.
+The [`evaluation.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/evaluation.ipynb) notebook can be used to generate **Tables 5, 6**, and **9** (Friedman test results) and **Figure 5** (critical difference diagrams) reported in the manuscript.
 
 > [!NOTE]
-> The [`f-score_anova.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/f-score_anova.py) and [`perftime_analysis.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/perftime_analysis.py) scripts can be used to generate the figures 2 and 4 of the manuscript, respectively. 
+> The [`f-score_anova.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/f-score_anova.py) and [`perftime_analysis.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/perftime_analysis.py) scripts can be used to generate the Figures 2 and 4 of the manuscript, respectively. 
 
 
 ## Acknowledgments
