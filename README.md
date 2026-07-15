@@ -24,7 +24,7 @@
 
 Before installing the project, make sure the following requirements are satisfied:
 
-1. **Python** (version >= **3.10**) is installed on your system (experiments were conducted with Python **3.10.20**). 
+1. **Python** (**3.10 <= version < 3.11**) is installed on your system (experiments were conducted with Python **3.10.20**).
 
 2. An **MPI** implementation is installed on your system, such as [OpenMPI][open-mpi-link] (recommended) or [MPICH][mpich-link].
 
@@ -48,7 +48,7 @@ chmod +x ./setup.sh
 ```
 
 > [!WARNING] 
-> The [PiML](https://selfexplainml.github.io/PiML-Toolbox/_build/html/install.html) toolbox requires `pandas (<2.0.0)`, `numpy (<1.24.0)`, and `scipy (==1.5.3)`. These outdated dependencies conflict with other packages required by K-IPO, and `pip` may fail to automatically resolve all dependency conflicts. To avoid installation issues, K-IPO provides a [`setup.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.sh) script that manually resolves these conflicts and configures the environment.
+> The [PiML](https://selfexplainml.github.io/PiML-Toolbox/_build/html/install.html) toolbox requires `pandas (<2.0.0)`, `numpy (<1.24.0)`, and `scipy (==1.5.3)`. These outdated dependencies conflict with other packages required by K-IPO, and `pip` may fail to automatically resolve the resulting dependency conflicts. To avoid installation issues, a [`setup.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.sh) script is provided to manually install the required dependency versions and configure the K-IPO environment.
 
 ## Usage
 
