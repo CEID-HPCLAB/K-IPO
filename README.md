@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache--2.0-FFDEAD)](https://www.apache.org/licenses/LICENSE-2.0)  <br>
 
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-purple?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3100/) 
-![ΧΑΙ](https://img.shields.io/badge/ΧΑΙ-228B22?style=flat&logo=dna&logoColor=white)
+[![XAI](https://img.shields.io/badge/XAI-Explainable%20AI-228B22)](#)
 ![Oversampling](https://img.shields.io/badge/Oversampling-001594?style=flat&logo=dna&logoColor=white)
 
 **K-IPO** is a generator-agnostic, *generate-then-select* framework for imbalanced tabular data classification that preserves the original feature importance ranking during data augmentation. K-IPO iteratively generates minority-class candidates and accepts them only if their inclusion maintains a user-defined minimum Kendall’s tau ($\tau$) correlation with the reference feature importance ranking. Optionally, stricter constraints can be enforced on the highest-ranked (top-$k$) features. Evaluated on 20 imbalanced binary classification datasets using three classifiers and multiple explanation methods, K-IPO achieved the best or tied-best results in feature importance preservation, explanation consistency, and class separability compared with existing oversampling methods, including both conventional and generative approaches. It also generally improved predictive performance while maintaining competitive computational overhead.
@@ -12,6 +12,8 @@
 ## Table of Contents
 - [Prerequisites & Installation](#prerequisites--installation)
 - [Usage](#usage)
+    - [API](#api)
+    - [End-to-end Pipeline for AI4I2020](#end-to-end-pipeline-for-ai4i2020)
 - [Datasets](#datasets)
 - [Performance Evaluation](#performance-evaluation)
 - [Reproducibility](#reproducibility)
@@ -37,7 +39,7 @@ cd K-IPO
 
 Install the **K-IPO** package and external dependencies:
 ```bash
-# (Optional) Create and activate a Python virtual environment using Python 3.10
+# (Recommended) Create and activate a Python virtual environment using Python 3.10
 python3.10 -m venv venv
 source venv/bin/activate # POSIX (bash/zsh)
 
@@ -46,7 +48,34 @@ chmod +x ./setup.sh
 ```
 
 > [!WARNING] 
-> The [PiML](https://selfexplainml.github.io/PiML-Toolbox/_build/html/install.html) toolbox requires `pandas (<2.0.0)`, `numpy (<1.24.0)`, and `scipy (==1.5.3)`. These outdated dependencies conflict with other packages required by K-IPO, and `pip` may fail to automatically resolve the required environment. To avoid installation issues, K-IPO provides a [setup.sh](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.sh) script that manually installs the required dependencies and configures the environment.
+> The [PiML](https://selfexplainml.github.io/PiML-Toolbox/_build/html/install.html) toolbox requires `pandas (<2.0.0)`, `numpy (<1.24.0)`, and `scipy (==1.5.3)`. These outdated dependencies conflict with other packages required by K-IPO, and `pip` may fail to automatically resolve all dependency conflicts. To avoid installation issues, K-IPO provides a [`setup.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.sh) script that manually resolves these conflicts and configures the environment.
+
+## Usage
+
+### API
+
+The code listing below illustrates a representative example of how K-IPO can be applied to oversample an imbalanced tabular binary classification dataset. `TAU_THRESHOLD`, `TOPK_OVERLAP`, `TOPK_ORDERING`, and `BALANCE_RATIO` are configuration parameters that control the oversampling process. Their values are specified in a [YAML configuration file](https://github.com/CEID-HPCLAB/K-IPO/blob/main/config.yml), which, among other settings, defines the underlying generator used by K-IPO to generate new samples and the dataset on which the oversampling process is performed.
+
+```python
+from kipo.selector import KIPOSelector as KIPO
+
+kipo = KIPO(num_features, tau_threshold = TAU_THRESHOLD, topk_ordering = TOPK_ORDERING, topk_overlap = TOPK_OVERLAP)
+
+kipo_X_aug, kipo_y_aug, info = kipo.select(X_train, y_train, X_test, y_test, ratio = BALANCE_RATIO,
+                                           generator = gen_conf["method"], preprocessing = pipeline, **gen_conf["params"])
+
+```
+
+> [!ΝΟΤΕ] 
+> For a complete example demonstrating the K-IPO synthetic data generation workflow, we refer the reader to the [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) script.
+
+### End-to-end Pipeline for AI4I2020
+
+The [`demo.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) notebook presents an end-to-end pipeline for augmenting the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) predictive maintenance dataset. The pipeline evaluates and compares K-IPO against several state-of-the-art data generation and oversampling methods, including ([CTGAN](https://github.com/sdv-dev/CTGAN), [TVAE](https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/tvae.py), [Gaussian Copula](https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer) and [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html)). 
+
+## Datasets
+
+
 
 
 ## Acknowledgments
