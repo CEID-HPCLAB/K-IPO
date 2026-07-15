@@ -115,7 +115,7 @@ sep: ;
 ```
 
 > [!NOTE]
-> The [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset and its `YAML` configuration file are bundled with the repository under the [`datasets/`](#https://github.com/CEID-HPCLAB/K-IPO/tree/main/datasets) folder and can be used directly for the K-IPO [API demonstration](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) and [end-to-end performance evaluation workflow](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) without any additional setup.
+> The [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset and its `YAML` configuration file are bundled with the repository under the [`datasets/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/datasets) folder and can be used directly for the K-IPO [API demonstration](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) and [end-to-end performance evaluation workflow](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) without any additional setup.
 
 
 ## Performance Evaluation
