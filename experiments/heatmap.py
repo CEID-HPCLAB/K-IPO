@@ -1,6 +1,8 @@
 import pandas as pd
 import seaborn as sns
 
+from pathlib import Path
+
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 
@@ -23,7 +25,8 @@ DATASETS =  ["abalone", "ai4i2020", "airlines", "bank-customer-churn-prediction"
              "mammography", "nhanes", "online-shoppers-purchasing-intention", "pen-digits", "rl", 
              "seismic-bumps", "ur3-cobot-ops", "wilt"]
 
-pdf_dir = "./sensitivity_analysis/heatmaps/pdf"; png_dir = "./sensitivity_analysis/heatmaps/png"
+BASE_DIR = Path(__file__).resolve().parent
+pdf_dir = BASE_DIR / "sensitivity_analysis" / "heatmaps" / "pdf"; png_dir = BASE_DIR / "sensitivity_analysis" / "heatmaps" / "png"
 
 os.makedirs(pdf_dir, exist_ok = True); os.makedirs(png_dir, exist_ok = True)
 
@@ -31,7 +34,7 @@ for DATASET in DATASETS:
     
     print(f"[INFO] processing dataset: {DATASET}")
 
-    df = pd.read_csv(f"./sensitivity_analysis/results/{DATASET}.csv")
+    df = pd.read_csv(f"{BASE_DIR}/sensitivity_analysis/results/{DATASET}.csv")
 
     tau_ord = df["data_path"].str.extract(r"([0-9.]+)t_([0-9.]+)ord")
     df["tau"] = tau_ord[0].astype(float); df["topk"] = tau_ord[1].astype(float)
