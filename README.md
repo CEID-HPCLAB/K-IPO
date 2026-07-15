@@ -13,10 +13,9 @@
 - [Prerequisites & Installation](#prerequisites--installation)
 - [Usage](#usage)
     - [API](#api)
-    - [End-to-end Pipeline for AI4I2020](#end-to-end-pipeline-for-ai4i2020)
+    - [End-to-End Pipeline for AI4I2020](#end-to-end-pipeline-for-ai4i2020)
 - [Datasets](#datasets)
 - [Performance Evaluation](#performance-evaluation)
-- [Reproducibility](#reproducibility)
 - [File Structure](#file-structure)
 - [Acknowledgments](#acknowledgments)
 
@@ -69,13 +68,20 @@ kipo_X_aug, kipo_y_aug, info = kipo.select(X_train, y_train, X_test, y_test, rat
 > [!ΝΟΤΕ] 
 > For a complete example demonstrating the K-IPO synthetic data generation workflow, we refer the reader to the [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) script.
 
-### End-to-end Pipeline for AI4I2020
+### End-to-End Pipeline for AI4I2020
 
-The [`demo.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) notebook presents an end-to-end pipeline for augmenting the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) predictive maintenance dataset. The pipeline evaluates and compares K-IPO against several state-of-the-art data generation and oversampling methods, including ([CTGAN](https://github.com/sdv-dev/CTGAN), [TVAE](https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/tvae.py), [Gaussian Copula](https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer) and [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html)). 
+The [`demo.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) notebook presents an end-to-end pipeline for augmenting the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) predictive maintenance dataset. The pipeline evaluates and compares K-IPO against several state-of-the-art data generation and oversampling methods, including [CTGAN](https://github.com/sdv-dev/CTGAN), [TVAE](https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/tvae.py), [Gaussian Copula](https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer) and [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html). 
 
 ## Datasets
 
+To download and install the datasets used in the manuscript, along with the corresponding `YAML` configuration files, run the following commands:
+```bash
+chmod +x ./datasets/download.sh # assumes you are in the repo root directory
+./datasets/download.sh 
+```
 
+> [!ΝΟΤΕ] 
+> The [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset and its `YAML` configuration file are bundled with the repository under the [`datasets/`](#https://github.com/CEID-HPCLAB/K-IPO/tree/main/datasets) folder and can be used directly for the K-IPO API demonstration and [end-to-end performance evaluation workflow](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) without any additional setup.
 
 
 ## Acknowledgments
