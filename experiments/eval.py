@@ -57,7 +57,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type = str, default = None, help = "(Raw) Dataset path")
     parser.add_argument("--eval_dataset", type = str, default = None, help = "Evaluation Dataset path")
-    parser.add_argument("--xai", type = bool, action = argparse.BooleanOptionalAction, default = True,help = "Specify whether to perform explainability evaluation on the given dataset")
+    parser.add_argument("--xai", type = bool, action = argparse.BooleanOptionalAction, default = True, help = "Specify whether to perform explainability evaluation on the given dataset")
 
     args = parser.parse_args()
 
