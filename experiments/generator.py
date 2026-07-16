@@ -159,7 +159,7 @@ def main():
 
     MI = mutual_info_classif(kipo_X_train_aug, kipo_y_train_aug.values.ravel())
     information_gain = (MI / np.log(2.0)).mean()
-    seperability = separability_N3(kipo_X_train_aug, kipo_y_train_aug.values.ravel()) # 1 - N3
+    separability = separability_N3(kipo_X_train_aug, kipo_y_train_aug.values.ravel()) # 1 - N3
 
     console.print(f"[green][INFO] training and testing of all models completed successfully[/green]")
 
@@ -173,7 +173,7 @@ def main():
         print(f"{method} -> {final_importance[method].tolist()}")
         
     print(f"[INFO] information gain: {information_gain:.4f}")
-    print(f"[INFO] seperability (1 - N3): {seperability:.4f}")
+    print(f"[INFO] separability (1 - N3): {separability:.4f}")
 
     end_time = torcpy.gettime()
 

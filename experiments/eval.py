@@ -127,7 +127,7 @@ def main():
 
     MI = mutual_info_classif(X_train_aug, y_train_aug.values.ravel())
     information_gain = (MI / np.log(2.0)).mean()
-    seperability = separability_N3(X_train_aug, y_train_aug.values.ravel())
+    separability = separability_N3(X_train_aug, y_train_aug.values.ravel())
 
     console = Console() 
     console.print(f"[green][INFO] training and testing of all models completed successfully[/green]")
@@ -136,7 +136,7 @@ def main():
     console.print(f"[green][INFO] predictive capabilities -> [/green] {metrics_form}")
 
     print(f"[INFO] information gain: {information_gain:.4f}")
-    print(f"[INFO] seperability (1 - N3): {seperability:.4f}")
+    print(f"[INFO] separability (1 - N3): {separability:.4f}")
 
     if XAI_EVAL:
         importance_overlap_perc = compute_importance_overlap(final_importance, DATASET, topk = num_topk_features) 
