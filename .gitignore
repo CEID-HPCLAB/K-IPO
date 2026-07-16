@@ -6,5 +6,5 @@ format_topk*.py
 *.zip
 merge.py
 depr/*
-*check*.py
+check*.py
 build/*
