@@ -1,0 +1,14 @@
+dataset: churn
+
+tau_threshold: 0.7
+
+balance_ratio: 0.75
+
+train_test_ratio: 0.8
+
+seed: 256 
+
+models:
+  - RandomForest  
+  - MLP
+  - GAMINet
