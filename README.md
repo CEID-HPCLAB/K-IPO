@@ -6,7 +6,7 @@
 [![XAI](https://img.shields.io/badge/XAI-Explainable%20AI-228B22)](#)
 ![Oversampling](https://img.shields.io/badge/Oversampling-001594?style=flat&logo=dna&logoColor=white)
 
-**K-IPO** is a generator-agnostic, *generate-then-select* framework for imbalanced tabular data classification that preserves the original feature importance ranking during data augmentation. K-IPO iteratively generates minority-class candidates and accepts them only if their inclusion maintains a user-defined minimum Kendall’s tau ($\tau$) correlation with the reference feature importance ranking. Optionally, stricter constraints can be enforced on the highest-ranked top-k features. Evaluated on 20 imbalanced binary classification datasets using three classifiers and multiple explanation methods, K-IPO achieved the best or tied-best results in feature importance preservation, explanation consistency, and class separability compared with existing oversampling methods, including both conventional and generative approaches. It also generally improved predictive performance while maintaining competitive computational overhead.
+**K-IPO** is a generator-agnostic, *generate-then-select* Python framework for imbalanced tabular data classification that preserves the original feature importance ranking during data augmentation. K-IPO iteratively generates minority-class candidates and accepts them only if their inclusion maintains a user-defined minimum Kendall’s tau ($\tau$) correlation with the reference feature importance ranking. Optionally, stricter constraints can be enforced on the highest-ranked top-k features. Evaluated on 20 imbalanced binary classification datasets using three classifiers and multiple explanation methods, K-IPO achieved the best or tied-best results in feature importance preservation, explanation consistency, and class separability compared with existing oversampling methods, including both conventional and generative approaches. It also generally improved predictive performance while maintaining competitive computational overhead.
 
 
 ## Table of Contents
@@ -18,7 +18,6 @@
     - [YAML Configuration Files](#yaml-configuration-files)
 - [Performance Evaluation](#performance-evaluation)
 - [File Structure](#file-structure)
-- [Future Directions](#future-directions)
 - [Acknowledgments](#acknowledgments)
 
 ## Prerequisites & Installation
@@ -75,14 +74,14 @@ kipo_X_aug, kipo_y_aug, info = kipo.select(X_train, y_train, X_test, y_test,
 > For a complete example demonstrating the K-IPO synthetic data generation workflow, we refer the reader to the [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) script.
 
 > [!IMPORTANT]
-> The K-IPO API does not currently support the direct integration of [TabDDPM](https://github.com/yandex-research/tab-ddpm) as an underlying generator for synthetic sample generation. Unlike the other supported generators (i.e., [CTGAN](https://github.com/sdv-dev/CTGAN), [TVAE](https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/tvae.py), [Gaussian Copula](https://docs.sdv.ai/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer), and [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html)), [TabDDPM](https://github.com/yandex-research/tab-ddpm) does not follow the widely adopted *fit()-sample()* interface. Nevertheless, [TabDDPM](https://github.com/yandex-research/tab-ddpm) can be used as the underlying generator through the driver code provided in [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/example.py) under the [`/experiments/tab-ddpm/code`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code) directory. This implementation follows the iterative *generate-then-select* scheme of K-IPO and allows synthetic sample generation under a user-defined Kendall's tau ($\tau$) correlation constraint.
+> The K-IPO API does not currently support the direct integration of [TabDDPM](https://github.com/yandex-research/tab-ddpm) as an underlying generator for synthetic sample generation. Unlike the other supported generators (i.e., [CTGAN](https://github.com/sdv-dev/CTGAN), [TVAE](https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/tvae.py), [Gaussian Copula](https://docs.sdv.ai/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer), and [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html)), [TabDDPM](https://github.com/yandex-research/tab-ddpm) does not follow the widely adopted *fit()-sample()* interface. Nevertheless, [TabDDPM](https://github.com/yandex-research/tab-ddpm) can be used as the underlying generator through the driver code provided in [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/example.py) under the [`experiments/tab-ddpm/code`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code) directory. This implementation follows the iterative *generate-then-select* scheme of K-IPO and allows synthetic sample generation under a user-defined Kendall's tau ($\tau$) correlation constraint.
 
 ### End-to-End Pipeline for AI4I2020
 
 The [`demo.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) notebook presents an end-to-end pipeline for augmenting the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) predictive maintenance dataset. The pipeline evaluates and compares K-IPO against several state-of-the-art data generation and oversampling methods, including [CTGAN](https://github.com/sdv-dev/CTGAN), [TVAE](https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/tvae.py), [Gaussian Copula](https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer) and [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html). 
 
 > [!NOTE]
-> Due to its different API, [TabDDPM](https://github.com/yandex-research/tab-ddpm) is not integrated into the end-to-end augmentation pipeline presented in this [notebook]((https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb)). However, using the [`generator.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/generator.py) script and appropriately configuring the `dataset` field in the corresponding [YAML configuration file](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/config.yml), the augmented version of the AI4I2020 dataset can still be generated using [TabDDPM](https://github.com/yandex-research/tab-ddpm).
+> Due to its different API, [TabDDPM](https://github.com/yandex-research/tab-ddpm) is not integrated into the end-to-end augmentation pipeline presented in this [notebook](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb). However, using the [`generator.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/generator.py) script and appropriately configuring the `dataset` field in the corresponding [YAML configuration file](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/config.yml), the augmented version of the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset can still be generated using [TabDDPM](https://github.com/yandex-research/tab-ddpm).
 
 ## Datasets
 
@@ -133,22 +132,22 @@ sep: ;
 
 Consequently, downloading the raw datasets using the commands provided above is not sufficient to run the [TabDDPM](https://github.com/yandex-research/tab-ddpm)-based augmentation workflow. Additional steps are required, including the generation of the corresponding configuration files and the preparation of each dataset in the required `.npy` format. The following commands automate this process:
 ```bash
-chmod +x ./experiments/tab-ddpm/setup.sh
 # Install the required dependencies and download the corresponding TOML and JSON configuration files
 # The TOML files are stored under experiments/tab-ddpm/datasets/config/
 # The JSON files are stored in the corresponding dataset directories under K-IPO/experiments/tab-ddpm/datasets/data/
+chmod +x ./experiments/tab-ddpm/setup.sh
 ./experiments/tab-ddpm/setup.sh
 
-chmod +x ./experiments/tab-ddpm/scripts/split.sh
 # Split each raw dataset into training and testing subsets and store them as .npy files
 # in the corresponding dataset directories under experiments/tab-ddpm/datasets/data/
+chmod +x ./experiments/tab-ddpm/scripts/split.sh
 ./experiments/tab-ddpm/scripts/split.sh
 ```
 
 For a detailed description of the TabDDPM API, please refer to the [official repository](https://github.com/yandex-research/tab-ddpm).
 
 > [!IMPORTANT]
-> For the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset, the train-test split and the corresponding `.npy` files, along with the two required configuration files ([`TOML`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/datasets/config/ai4i2020.toml) and [`JSON`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/datasets/data/ai4i2020/info.json)), are already bundled with the repository under the [`experiments/tab-ddpm/datasets/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets) folder. These files can be directly used for TabDDPM-based augmentation. Use [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/example.py) to generate synthetic samples under a user-defined Kendall's tau ($\tau$) correlation constraint (specified in the [YAML configuration file](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/config.yml)), or [`generator.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/generator.py) for unconstrained oversampling. 
+> For the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset, the train-test split and the corresponding `.npy` files, along with the two required configuration files ([`TOML`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/datasets/config/ai4i2020.toml) and [`JSON`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/datasets/data/ai4i2020/info.json)), are already bundled with the repository under the [`experiments/tab-ddpm/datasets/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets) folder. These files can be directly used for [TabDDPM](https://github.com/yandex-research/tab-ddpm)-based augmentation. Use [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/example.py) to generate synthetic samples under a user-defined Kendall's tau ($\tau$) correlation constraint (specified in the [YAML configuration file](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/config.yml)), or [`generator.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/generator.py) for unconstrained oversampling. 
 
 ## Performance Evaluation
 
@@ -319,17 +318,9 @@ The [`evaluation.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experime
 - [`setup.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.py): Deprecated setup script for the K-IPO package
 - [`setup.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.sh): Script for setting up the K-IPO package environment and installing the required dependencies
 
-## Future Directions
-- [X] Improved API documentation
-- [ ] Support for large-scale datasets through a distributed K-IPO implementation on multi-node clusters
-- [ ] Integration of uncertainty-aware rank preservation constraints
-- [ ] Support for multi-class and multi-label classification
-- [ ] Extend K-IPO beyond tabular data (e.g., image data)
-- [ ] Automatic selection of rank preservation constraints
-
 ## Acknowledgments
 
-This research was funded by the "ARCHIMEDES Unit: Research in Artificial Intelligence, Data Science, and Algorithms" (MIS 5154714) under Greece's National Recovery and Resilience Plan, funded by the European Union – NextGenerationEU.
+This work has been supported by project MIS 5154714 of the National Recovery and Resilience Plan Greece 2.0, funded by the European Union under the NextGenerationEU Program.
 
 
 [open-mpi-link]: https://www.open-mpi.org/
