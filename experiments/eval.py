@@ -3,6 +3,8 @@ import os; import yaml; import pandas as pd; import numpy as np
 
 import argparse
 
+from pathlib import Path
+
 from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import mutual_info_classif
 
@@ -27,16 +29,23 @@ warnings.filterwarnings("ignore")
 
 
 def work(index, model_name, kipo_X_train_aug, kipo_X_test_aug, kipo_y_train_aug, 
-         kipo_y_test_aug, num_cols, cat_cols, xai_methods):
+         kipo_y_test_aug, num_cols, cat_cols, xai_methods, xai_eval = False):
     
     model_conf = models[model_name]
     estimator = copy.deepcopy(model_conf["model"](**model_conf["params"]))
-    estimator.fit(kipo_X_train_aug, kipo_y_train_aug.values.ravel())
+    try:
+        estimator.fit(kipo_X_train_aug, kipo_y_train_aug.values.ravel())
+
+    except np.linalg.LinAlgError:
+        return [], None
 
     probs = estimator.predict_proba(kipo_X_test_aug)[:, -1]
     preds = probs >= calculate_threshold(kipo_y_test_aug, probs, criterion = "geo_mean")
 
     pred_metrics = compute_metrics(probs, preds, kipo_y_test_aug)
+
+    if not xai_eval:
+        return pred_metrics, None
 
     xai_metrics = compute_explanations(X_train = kipo_X_train_aug, y_train = kipo_y_train_aug.values.ravel(), estimator = estimator,
                                         X_test = kipo_X_test_aug, y_test = kipo_y_test_aug.values.ravel(), num_cols = num_cols, 
@@ -104,6 +113,9 @@ def main():
     aug_data = load_data(os.path.join(os.path.dirname(__file__), EVAL_DATASET), conf)
     X_aug = aug_data.iloc[:, :-1]; y_aug = aug_data.iloc[:, -1]
 
+    if Path(EVAL_DATASET).parent.name == "TabDDPM":
+        y_aug = encode_target(y_aug, conf); X_aug, _ = preprocessing(X_aug, conf)
+
     X_train_aug, X_test_aug, y_train_aug, y_test_aug = train_test_split(X_aug, y_aug, train_size = TRAIN_TEST_RATIO,
                                                                         random_state = SEED_GEN, stratify = y_aug)
     
@@ -111,7 +123,7 @@ def main():
     
     for i, mod_name in enumerate(MODELS):
         task = torcpy.submit(work, i, mod_name, X_train_aug, X_test_aug, y_train_aug, 
-                            y_test_aug, num_cols, cat_cols, XAI_METHODS)
+                            y_test_aug, num_cols, cat_cols, XAI_METHODS, XAI_EVAL)
         tasks.append(task)
     
     torcpy.wait()
@@ -123,7 +135,9 @@ def main():
         pred_results.append(metrics); xai_results.append(xai)
 
     final_pred_results = compute_final_results(pred_results)
-    final_importance = format_feature_importance(xai_results, XAI_METHODS)
+
+    if XAI_EVAL:
+        final_importance = format_feature_importance(xai_results, XAI_METHODS)
 
     MI = mutual_info_classif(X_train_aug, y_train_aug.values.ravel())
     information_gain = (MI / np.log(2.0)).mean()

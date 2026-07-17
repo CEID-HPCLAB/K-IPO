@@ -7,7 +7,6 @@ cd "$(dirname "$0")"
 MPI_PROCESSES=3
 
 datasets=(
-    ai4i2020
     abalone
     car-eval-4
     ai4i2020
@@ -24,10 +23,10 @@ datasets=(
     nhanes
     online-shoppers-purchasing-intention
     pen-digits
-    rl
     seismic-bumps
     ur3-cobot-ops
     wilt
+    rl
 )
 
 

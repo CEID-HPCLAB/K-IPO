@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+python -m pip install --upgrade pip
+
 pip install .
 pip install copulas==0.14.1 --no-deps
 pip install ctgan==0.12.1 --no-deps
