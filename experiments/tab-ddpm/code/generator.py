@@ -8,17 +8,6 @@ from kipo.utils import load_data, preprocessing, encode_target, extract_target_v
 from kipo.importance import compute_importance, kendall_tau
 
 
-def accept_chunk(chunk, X_train, y_train, raw_imp, data_config):
-    aug_imp = compute_importance(mode = "f-score_ANOVA", X_train = preprocessing(pd.concat([X_train, chunk], ignore_index = True), data_config)[0],
-                                y_train = pd.concat([y_train, pd.DataFrame({y_train.columns[0]: [1] * chunk.shape[0]})], 
-                                ignore_index = True).to_numpy().ravel()) 
-    
-    if kendall_tau(raw_imp, aug_imp) >= 0.7:
-        return True
-
-    return False
-
-
 def load_config(path):
     with open(os.path.join(os.path.dirname(__file__), path)) as f:
         return yaml.safe_load(f)
