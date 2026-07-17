@@ -18,6 +18,7 @@
     - [YAML Configuration Files](#yaml-configuration-files)
 - [Performance Evaluation](#performance-evaluation)
 - [File Structure](#file-structure)
+- [Future Directions](#future-directions)
 - [Acknowledgments](#acknowledgments)
 
 ## Prerequisites & Installation
@@ -114,7 +115,7 @@ cat_cols:
 sep: ;
 ```
 
-> [!NOTE]
+> [!IMPORTANT]
 > The [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset and its `YAML` configuration file are bundled with the repository under the [`datasets/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/datasets) folder and can be used directly for the K-IPO [API demonstration](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) and [end-to-end performance evaluation workflow](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) without any additional setup.
 
 
@@ -136,7 +137,7 @@ chmod +x ./experiments/eval.sh
 ./experiments/eval.sh C 
 ```
 
-> [!WARNING] 
+> [!IMPORTANT] 
 > The execution of the above commands requires all 20 raw datasets to be available locally. Therefore, the datasets must be downloaded beforehand using the commands provided in the [Datasets](#datasets) section.
 
 
@@ -259,6 +260,14 @@ The [`evaluation.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experime
 - [`requirements.txt`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/requirements.txt): Python dependencies
 - [`setup.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.py): Deprecated setup script for the K-IPO package
 - [`setup.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.sh): Script for setting up the K-IPO package environment and installing the required dependencies
+
+## Future Directions
+- [ ] Improved API documentation
+- [ ] Support for large-scale datasets through a distributed K-IPO implementation on multi-node clusters
+- [ ] Integration of uncertainty-aware rank preservation constraints
+- [ ] Support for multi-class and multi-label classification
+- [ ] Extend K-IPO beyond tabular data (e.g., image data)
+- [ ] Automatic selection of rank preservation constraints
 
 ## Acknowledgments
 
