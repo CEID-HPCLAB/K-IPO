@@ -50,12 +50,13 @@ run_selection() {
              for i in {1..10}; do
 
                 csv_file="${base}/${dataset}/datasets/${generator}/${i}.csv"
+                
                 if [ -f "$csv_file" ]; then
                     used_gen="$generator"
-                elif [ -f "${base}/${dataset}/datasets/SMOTENC/${i}.csv" ]; then
+                elif [ "$generator" == "SMOTE" ] && [ -f "${base}/${dataset}/datasets/SMOTENC/${i}.csv" ]; then
                     csv_file="${base}/${dataset}/datasets/SMOTENC/${i}.csv"
                     used_gen="SMOTENC"
-                elif [ -f "${base}/${dataset}/datasets/SMOTEN/${i}.csv" ]; then
+                elif [ "$generator" == "SMOTE" ] && [ -f "${base}/${dataset}/datasets/SMOTEN/${i}.csv" ]; then
                     csv_file="${base}/${dataset}/datasets/SMOTEN/${i}.csv"
                     used_gen="SMOTEN"
                 else
@@ -65,7 +66,6 @@ run_selection() {
                         echo "[WARNING] Skipping ${dataset} run ${i}: no valid synthetic dataset found for generator ${generator}"
                     fi
                     continue
-                
                 fi
                 
                 abs_path=$(realpath "${csv_file}")
