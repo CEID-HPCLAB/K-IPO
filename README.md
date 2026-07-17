@@ -74,9 +74,15 @@ kipo_X_aug, kipo_y_aug, info = kipo.select(X_train, y_train, X_test, y_test,
 > [!NOTE]
 > For a complete example demonstrating the K-IPO synthetic data generation workflow, we refer the reader to the [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) script.
 
+> [!IMPORTANT]
+> The K-IPO API does not currently support the direct integration of [TabDDPM](https://github.com/yandex-research/tab-ddpm) as an underlying generator for synthetic sample generation. Unlike the other supported generators (i.e., [CTGAN](https://github.com/sdv-dev/CTGAN), [TVAE](https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/tvae.py), [Gaussian Copula](https://docs.sdv.ai/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer), and [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html)), [TabDDPM](https://github.com/yandex-research/tab-ddpm) does not follow the widely adopted *fit()-sample()* interface. Nevertheless, [TabDDPM](https://github.com/yandex-research/tab-ddpm) can be used as the underlying generator through the driver code provided in [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tap-ddpm/code/example.py) under the [`/experiments/tab-ddpm/code`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tap-ddpm/code/) directory. This implementation follows the iterative *generate-then-select* scheme of K-IPO and allows synthetic sample generation under a user-defined Kendall's tau ($\tau$) correlation constraint.
+
 ### End-to-End Pipeline for AI4I2020
 
 The [`demo.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) notebook presents an end-to-end pipeline for augmenting the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) predictive maintenance dataset. The pipeline evaluates and compares K-IPO against several state-of-the-art data generation and oversampling methods, including [CTGAN](https://github.com/sdv-dev/CTGAN), [TVAE](https://github.com/sdv-dev/CTGAN/blob/main/ctgan/synthesizers/tvae.py), [Gaussian Copula](https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer) and [SMOTENC](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTENC.html). 
+
+> [!NOTE]
+> Due to its different API, [TabDDPM](https://github.com/yandex-research/tab-ddpm) is not integrated into the end-to-end augmentation pipeline presented in this [notebook]((https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb)). However, using the [`generator.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/generator.py) script and appropriately configuring the `dataset` field in the corresponding [YAML configuration file](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/config.yml), the augmented version of the AI4I2020 dataset can still be generated using [TabDDPM](https://github.com/yandex-research/tab-ddpm).
 
 ## Datasets
 
@@ -118,6 +124,31 @@ sep: ;
 > [!IMPORTANT]
 > The [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset and its `YAML` configuration file are bundled with the repository under the [`datasets/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/datasets) folder and can be used directly for the K-IPO [API demonstration](https://github.com/CEID-HPCLAB/K-IPO/blob/main/example.py) and [end-to-end performance evaluation workflow](https://github.com/CEID-HPCLAB/K-IPO/blob/main/demo.ipynb) without any additional setup.
 
+> [!WARNING]
+> As discussed earlier, [TabDDPM](https://github.com/yandex-research/tab-ddpm) follows a completely different API design compared to K-IPO and the other generators considered in this work. The main differences are summarized below:
+>
+> - [TabDDPM](https://github.com/yandex-research/tab-ddpm) assumes that the input data are already prepared, split into training and testing subsets, and serialized into separate `.npy` files corresponding to numerical features, categorical features, and the target variable. Therefore, unlike the other generators, it does not accept a Pandas DataFrame or a NumPy array as input. Instead, it expects the input data to be loaded from predefined file paths.
+>
+> - The generation of synthetic samples with [TabDDPM](https://github.com/yandex-research/tab-ddpm) requires two additional configuration files: (i) a `TOML` file that defines the parameters of the generation pipeline and (ii) a `JSON` file that describes the schema of the input dataset (e.g., the number of numerical and categorical features).
+
+Consequently, downloading the raw datasets using the commands provided above is not sufficient to run the [TabDDPM](https://github.com/yandex-research/tab-ddpm)-based augmentation workflow. Additional steps are required, including the generation of the corresponding configuration files and the preparation of each dataset in the required `.npy` format. The following commands automate this process:
+```bash
+chmod +x ./experiments/tab-ddpm/setup.sh
+# Install the required dependencies and download the corresponding TOML and JSON configuration files
+# The TOML files are stored under experiments/tab-ddpm/datasets/config/
+# The JSON files are stored in the corresponding dataset directories under K-IPO/experiments/tab-ddpm/datasets/data/
+./experiments/tab-ddpm/setup.sh
+
+chmod +x ./experiments/tab-ddpm/scripts/split.sh
+# Split each raw dataset into training and testing subsets and store them as .npy files
+# in the corresponding dataset directories under experiments/tab-ddpm/datasets/data/
+./experiments/tab-ddpm/scripts/split.sh
+```
+
+For a detailed description of the TabDDPM API, please refer to the [official repository](https://github.com/yandex-research/tab-ddpm).
+
+> [!IMPORTANT]
+> For the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset, the train-test split and the corresponding `.npy` files,along with the two required configuration files (`TOML` and `JSON`), are already bundled with the repository under the [`experiments/tab-ddpm/datasets/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets) folder. These files can be directly used for TabDDPM-based augmentation. Use [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/example.py) to generate synthetic samples under a user-defined Kendall's tau ($\tau$) correlation constraint, or [`generator.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/code/generator.py) for unconstrained oversampling. 
 
 ## Performance Evaluation
 
@@ -228,6 +259,33 @@ The [`evaluation.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experime
         - [`results/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/sensitivity_analysis/results): Evaluation results from the sensitivity analysis
             - [`abalone.csv`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/sensitivity_analysis/results/abalone.csv): Detailed sensitivity analysis results for the abalone dataset
             - *(The same pattern is repeated for each of the 20 datasets)*
+    - [`tab-ddpm/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm): 
+        - [`code/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code): Core implementation of the [TabDDPM](https://github.com/yandex-research/tab-ddpm)
+            - [`lib/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/lib): Unmodified from the [official repository](https://github.com/yandex-research/tab-ddpm/lib)
+            - [`tab_ddpm/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/tab_ddpm): Unmodified from the [official repository](https://github.com/yandex-research/tab-ddpm/tab_ddpm)
+            - [`eval_simple.py`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/eval_simple.py): Unmodified from the [official repository](https://github.com/yandex-research/tab-ddpm/scripts/eval_simple.py)
+            - [`example.py`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/example.py): [TabDDPM](https://github.com/yandex-research/tab-ddpm)-based augmentation with Kendall's tau ($\tau$) constraint
+            - [`generator.py`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/generator.py): [TabDDPM](https://github.com/yandex-research/tab-ddpm) API demonstration
+            - [`sample.py`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/sample.py): Modified version of the original [script](https://github.com/yandex-research/tab-ddpm/scripts/sample.py) to support the K-IPO generation workflow
+            - [`split.py`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/split.py): Performs train-test splitting and stores numerical features, categorical features, and the target variable as separate `.npy` files
+            - [`split.sh`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/split.sh): Script for generating the `.npy` files for the 20 evaluated datasets
+            - [`train.py`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/train.py): Unmodified from the [official repository](https://github.com/yandex-research/tab-ddpm/scripts/train.py)
+            - [`utils_train.py`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/code/utils_train.py): Modified version of the original [script](https://github.com/yandex-research/tab-ddpm/scripts/utils_train.py) to support the K-IPO generation workflow
+        - [`datasets/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets): Raw evaluated datasets following the [TabDDPM](https://github.com/yandex-research/tab-ddpm) data format (demo: [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset))
+            - [`config/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/config): `TOML` configuration files for the datasets
+            - [`data/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data): [TabDDPM](https://github.com/yandex-research/tab-ddpm) files for the raw imbalanced datasets
+                - [`ai4i2020/`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data/ai4i2020): [TabDDPM](https://github.com/yandex-research/tab-ddpm) files for the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset
+                    - [`info.json`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data/ai4i2020/info.json): Describes the schema of the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset
+                    - [`X_cat_test.npy`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data/ai4i2020/X_cat_test.npy): Categorical features of the test split of the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset
+                    - [`X_cat_train.npy`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data/ai4i2020/X_cat_train.npy): Categorical features of the train split of the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset
+                    - [`X_num_test.npy`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data/ai4i2020/X_num_test.npy): Numerical features of the test split of the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset
+                    - [`X_num_train.npy`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data/ai4i2020/X_num_train.npy): Numerical features of the train split of the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset
+                    - [`y_test.npy`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data/ai4i2020/y_test.npy): Target variable of the test split of the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset
+                    - [`y_train.npy`](https://github.com/CEID-HPCLAB/K-IPO/tree/main/experiments/tab-ddpm/datasets/data/ai4i2020/y_train.npy): Target variable of the train split of the [AI4I2020](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) dataset
+                - *(The same pattern is repeated for each of the 20 datasets)*
+        - [`config.yml`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/config.yml): [TabDDPM](https://github.com/yandex-research/tab-ddpm) experiment configuration file
+        - [`requirements.txt`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/requirements.txt): Additional Python dependencies required for executing the [TabDDPM](https://github.com/yandex-research/tab-ddpm) pipeline
+        - [`setup.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/tab-ddpm/setup.sh): Environment setup script for [TabDDPM](https://github.com/yandex-research/tab-ddpm)
     - [`config.yml`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/config.yml): Experiments configuration file
     - [`eval.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/eval.py): Evaluation of augmented datasets (both predictive capabilites and top-K overlap)
     - [`eval.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experiments/eval.sh): Script for running the three stages of the experimental evaluation
@@ -262,7 +320,7 @@ The [`evaluation.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experime
 - [`setup.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.sh): Script for setting up the K-IPO package environment and installing the required dependencies
 
 ## Future Directions
-- [ ] Improved API documentation
+- [X] Improved API documentation
 - [ ] Support for large-scale datasets through a distributed K-IPO implementation on multi-node clusters
 - [ ] Integration of uncertainty-aware rank preservation constraints
 - [ ] Support for multi-class and multi-label classification
