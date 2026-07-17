@@ -8,12 +8,12 @@ from kipo.utils import load_data, preprocessing, encode_target, extract_target_v
 from kipo.importance import compute_importance, kendall_tau
 
 
-def accept(chunk, X_train, y_train, raw_imp, data_config):
+def accept(chunk, X_train, y_train, raw_imp, threshold, data_config):
     aug_imp = compute_importance(mode = "f-score_ANOVA", X_train = preprocessing(pd.concat([X_train, chunk], ignore_index = True), data_config)[0],
                                 y_train = pd.concat([y_train, pd.DataFrame({y_train.columns[0]: [1] * chunk.shape[0]})], 
                                 ignore_index = True).to_numpy().ravel()) 
     
-    if kendall_tau(raw_imp, aug_imp) >= 0.7:
+    if kendall_tau(raw_imp, aug_imp) >= threshold:
         return True
 
     return False
@@ -32,7 +32,8 @@ def main():
     data_config = load_config(os.path.join("..", "..", "..", "datasets", "config", f"{DATASET}.yml"))
 
     CONFIG = os.path.join(os.path.dirname(__file__), "..", "datasets", "config", f"{DATASET}.toml")
-    BALANCE_RATIO = run_config["balance_ratio"]; SEED = run_config["seed"]; TRAIN_TEST_RATIO = run_config["train_test_ratio"]
+    TAU_THRESHOLD = run_config["tau_threshold"]; BALANCE_RATIO = run_config["balance_ratio"]
+    SEED = run_config["seed"]; TRAIN_TEST_RATIO = run_config["train_test_ratio"]
 
     raw_config = lib.load_config(CONFIG)
     
@@ -79,7 +80,6 @@ def main():
     max_dry_attempts = 25
     
     while total_needed_samples > 0: 
-        print(total_needed_samples)
         current_seed = seed_generator.integers(0, 2**31 - 1).item()        
         block_size = min(max_block_size, total_needed_samples); min_block_size = min(min_block_size, block_size)
 
@@ -90,7 +90,6 @@ def main():
             change_val = False, seed = current_seed)
 
         X_num_gen, X_cat_gen, y_gen = sample(num_samples = block_size, parent_dir=raw_config['parent_dir'],
-            batch_size = raw_config['sample']['batch_size'],
             **raw_config['diffusion_params'], real_data_path = raw_config['real_data_path'], 
             model_path = os.path.join(raw_config['parent_dir'], 'model.pt'),
             model_type = raw_config['model_type'], model_params = raw_config['model_params'],
@@ -126,7 +125,7 @@ def main():
         X_aug = X_aug[:, reorder_idx]
         X_aug_df = pd.DataFrame(X_aug, columns = X.columns)
             
-        if accept(X_aug_df, X_real, y_train, raw_imp, data_config):
+        if accept(X_aug_df, X_real, y_train, raw_imp, TAU_THRESHOLD, data_config):
             total_needed_samples -= X_aug_df.shape[0]; X_real = pd.concat([X_real, X_aug_df], ignore_index = True)
             y_train = pd.concat([y_train, pd.DataFrame({y_train.columns[0]: [1] * X_aug_df.shape[0]})], ignore_index = True)
 
@@ -162,7 +161,7 @@ def main():
                 if chunk.shape[0] < min_block_size:
                     break
                     
-                if accept(chunk, X_real, y_train, raw_imp, data_config):
+                if accept(chunk, X_real, y_train, raw_imp, TAU_THRESHOLD, data_config):
                     total_needed_samples -= chunk.shape[0]; X_real = pd.concat([X_real, chunk], ignore_index = True)
                     y_train = pd.concat([y_train, pd.DataFrame({y_train.columns[0]: [1] * chunk.shape[0]})], ignore_index = True)
 
