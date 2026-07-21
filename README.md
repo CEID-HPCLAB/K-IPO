@@ -1,4 +1,5 @@
 # ⚖️ K-IPO: Kendall-constrained Importance Preserving Oversampling for Imbalanced Tabular Data
+[![arXiv K-IPO](https://img.shields.io/badge/arXiv-2607.16478-b31b1b.svg)](https://arxiv.org/abs/2607.16478)
 [![GitHub release](https://img.shields.io/github/v/release/CEID-HPCLAB/K-IPO?color=%238FD9FB)](https://github.com/CEID-HPCLAB/K-IPO/releases)
 [![License](https://img.shields.io/badge/License-Apache--2.0-FFDEAD)](https://www.apache.org/licenses/LICENSE-2.0)  <br>
 
@@ -18,6 +19,7 @@
     - [YAML Configuration Files](#yaml-configuration-files)
 - [Performance Evaluation](#performance-evaluation)
 - [File Structure](#file-structure)
+- [Citation](#citation)
 - [Acknowledgments](#acknowledgments)
 
 ## Prerequisites & Installation
@@ -317,6 +319,20 @@ The [`evaluation.ipynb`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/experime
 - [`requirements.txt`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/requirements.txt): Python dependencies
 - [`setup.py`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.py): Deprecated setup script for the K-IPO package
 - [`setup.sh`](https://github.com/CEID-HPCLAB/K-IPO/blob/main/setup.sh): Script for setting up the K-IPO package environment and installing the required dependencies
+
+## Citation
+
+If you find K-IPO useful for your research, please cite:
+```bibtex
+@article{Tyrovolas2026,
+    title = {K-IPO: Kendall-constrained Importance Preserving Oversampling for Imbalanced Tabular Data}, 
+    author = {Marios Tyrovolas and Argiris Sofotasios and Dimitris Metaxakis and Georgios Mermigkis and 
+              George Georgoulas and Panagiotis Hadjidoukas and Chrysostomos Stylios},
+    year = {2026},
+    eprint = {2607.16478},
+    archivePrefix = {arXiv}
+}
+```
 
 ## Acknowledgments
 
