@@ -2,7 +2,6 @@
 [![arXiv K-IPO](https://img.shields.io/badge/arXiv-2607.16478-b31b1b.svg)](https://arxiv.org/abs/2607.16478)
 [![GitHub release](https://img.shields.io/github/v/release/CEID-HPCLAB/K-IPO?color=%238FD9FB)](https://github.com/CEID-HPCLAB/K-IPO/releases)
 [![License](https://img.shields.io/badge/License-Apache--2.0-FFDEAD)](https://www.apache.org/licenses/LICENSE-2.0)  <br>
-
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-purple?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3100/) 
 [![XAI](https://img.shields.io/badge/XAI-Explainable%20AI-228B22)](#)
 ![Oversampling](https://img.shields.io/badge/Oversampling-001594?style=flat&logo=dna&logoColor=white)
