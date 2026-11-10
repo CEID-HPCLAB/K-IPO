@@ -8,6 +8,7 @@
 
 **K-IPO** is a generator-agnostic, *generate-then-select* Python framework for imbalanced tabular data classification that preserves the original feature importance ranking during data augmentation. K-IPO iteratively generates minority-class candidates and accepts them only if their inclusion maintains a user-defined minimum Kendall’s tau ($\tau$) correlation with the reference feature importance ranking. Optionally, stricter constraints can be enforced on the highest-ranked top-k features. Evaluated on 20 imbalanced binary classification datasets using three classifiers and multiple explanation methods, K-IPO achieved the best or tied-best results in feature importance preservation, explanation consistency, and class separability compared with existing oversampling methods, including both conventional and generative approaches. It also generally improved predictive performance while maintaining competitive computational overhead.
 
+> For a detailed description of the K-IPO framework and its experimental evaluation, please refer to our [preprint](https://arxiv.org/abs/2607.16478).
 
 ## Table of Contents
 - [Prerequisites & Installation](#prerequisites--installation)
