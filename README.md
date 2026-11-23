@@ -1,4 +1,16 @@
-# ⚖️ K-IPO: Kendall-constrained Importance Preserving Oversampling for Imbalanced Tabular Data
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)"
+      srcset="https://ghrb.waren.build/render/banner?header=%21%5Bicon+src%3D%22https%3A%2F%2Fraw.githubusercontent.com%2FCEID-HPCLAB%2FK-IPO%2Fmain%2Flogo%2Fdark.png%22+w%3D%22116%25%22%5D+K-IPO&bg=161B22-21262D&color=E6EDF3&headerfont=Fraunces">
+    <source media="(prefers-color-scheme: light)"
+      srcset="https://ghrb.waren.build/render/banner?header=%21%5Bicon+src%3D%22https%3A%2F%2Fraw.githubusercontent.com%2FCEID-HPCLAB%2FK-IPO%2Fmain%2Flogo%2Flight.png%22+w%3D%22116%25%22%5D+K-IPO&bg=FFF9F7-FFF0EA&color=1F2328&headerfont=Fraunces">
+    <img alt="K-IPO" width="100%"
+      src="https://ghrb.waren.build/render/banner?header=%21%5Bicon+src%3D%22https%3A%2F%2Fraw.githubusercontent.com%2FCEID-HPCLAB%2FK-IPO%2Fmain%2Flogo%2Flight.png%22+w%3D%22116%25%22%5D+K-IPO&bg=FFF9F7-FFF0EA&color=1F2328&headerfont=Fraunces">
+  </picture>
+</p>
+
+
+# K-IPO: Kendall-constrained Importance Preserving Oversampling for Imbalanced Tabular Data
 [![arXiv K-IPO](https://img.shields.io/badge/arXiv-2607.16478-b31b1b.svg)](https://arxiv.org/abs/2607.16478)
 [![GitHub release](https://img.shields.io/github/v/release/CEID-HPCLAB/K-IPO?color=%238FD9FB)](https://github.com/CEID-HPCLAB/K-IPO/releases)
 [![License](https://img.shields.io/badge/License-Apache--2.0-FFDEAD)](https://www.apache.org/licenses/LICENSE-2.0)  <br>
